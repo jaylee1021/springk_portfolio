@@ -1,0 +1,15 @@
+export const artworks = [
+  { id: 1, title: 'Story', category: 'Acrylic on Canvas', image: '/assets/01_story_2009_acrylic on canvas_116.8x91.0(cm).JPG' },
+  { id: 2, title: 'Story 2', category: 'Acrylic on Canvas', image: '/assets/02_story2_2009_acrylic on canvas_116.8x91.0(cm).JPG' },
+  { id: 3, title: 'Story 3', category: 'Acrylic on Canvas', image: '/assets/03_story3_2009_acrylic on canvas_116.8x91.0(cm).jpg' },
+  { id: 4, title: 'Story 4', category: 'Acrylic on Canvas', image: '/assets/04_story4_2009_acrylic on canvas_162.2x130.3(cm).jpg' },
+  { id: 5, title: 'Room', category: 'Acrylic on Canvas', image: '/assets/05_Room_2009_acrylic on canvas_162.2x130.3(cm).JPG' },
+  { id: 6, title: 'Room 2', category: 'Acrylic on Canvas', image: '/assets/06_Room2_2009_acrylic on canvas_162.2x130.3(cm).JPG' },
+  { id: 7, title: 'Room in Box', category: 'Acrylic on Canvas', image: '/assets/07_Room in box_2009_acrylic on canvas_162.2x130.3(cm).JPG' },
+  { id: 8, title: 'On Surgery', category: 'Acrylic on Canvas', image: '/assets/08_on Surgery_2009_acrylic on canvas_162.2x130.3(cm).JPG' },
+  { id: 9, title: 'Healing Snack', category: 'Acrylic on Canvas', image: '/assets/09_heaing snack_2009_acrylic on canvas_162.2x130.3(cm).JPG' },
+  { id: 10, title: 'Healing Muffin', category: 'Acrylic on Canvas', image: '/assets/010_healing muffin_2009_acrylic on canvas_162.2x130.3(cm).JPG' },
+  { id: 11, title: 'Healing Corn', category: 'Acrylic on Canvas', image: '/assets/011_healing corn_2009_acrylic on canvas_162.2x130.3(cm).JPG' },
+  { id: 12, title: '0011-1', category: 'Acrylic on Canvas', image: '/assets/0011-1.JPG' },
+  { id: 13, title: 'To Go Box', category: 'Acrylic on Canvas', image: '/assets/012_To go box_2009_acrylic on canvas_162.2x130.3(cm).JPG' },
+];
