@@ -36,9 +36,6 @@ export default function Home() {
         <Typography variant="h1" component="h1" gutterBottom>
           Gallery
         </Typography>
-        <Typography variant="h5" color="text.secondary" sx={{ maxWidth: 600, mx: 'auto' }}>
-          A collection of recent works exploring color, light, and emotion.
-        </Typography>
       </Box>
 
       <Grid container spacing={4}>
