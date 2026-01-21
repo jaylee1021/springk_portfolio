@@ -10,17 +10,12 @@ import ArtCard from '@/components/ArtCard/ArtCard';
 import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
 
-// Placeholder data
-const artworks = [
-  { id: 1, title: 'Summer Breeze', category: 'Oil on Canvas', image: 'https://res.cloudinary.com/itcpc-home/image/upload/v1701587809/itcpc-banner/jf0p7ra7nlfg1dokc3if.jpg' },
-  { id: 2, title: 'Urban Solitude', category: 'Acrylic', image: 'https://source.unsplash.com/random/800x800?art,city' },
-  { id: 3, title: 'Mountain Echo', category: 'Watercolor', image: 'https://source.unsplash.com/random/800x800?nature,mountain' },
-  { id: 4, title: 'Abstract Dreams', category: 'Mixed Media', image: 'https://source.unsplash.com/random/800x800?abstract' },
-  { id: 5, title: 'Floral Symphony', category: 'Oil on Canvas', image: 'https://source.unsplash.com/random/800x800?flowers' },
-  { id: 6, title: 'Ocean Whisper', category: 'Watercolor', image: 'https://source.unsplash.com/random/800x800?ocean' },
-];
+import { artworks } from '@/data/artworks';
+
+import SplashScreen from '@/components/Splash/SplashScreen';
 
 export default function Home() {
+  const [showSplash, setShowSplash] = React.useState(true);
   const [selectedImage, setSelectedImage] = React.useState<string | null>(null);
 
   const handleImageClick = (image: string) => {
@@ -30,6 +25,10 @@ export default function Home() {
   const handleClose = () => {
     setSelectedImage(null);
   };
+
+  if (showSplash) {
+    return <SplashScreen onEnter={() => setShowSplash(false)} />;
+  }
 
   return (
     <Container maxWidth="xl" sx={{ py: 8 }}>
@@ -43,20 +42,16 @@ export default function Home() {
       </Box>
 
       <Grid container spacing={4}>
-        {artworks.map((art) => {
-           const imgSrc = art.id === 1 ? art.image : `https://placehold.co/600x600?text=${encodeURIComponent(art.title)}`;
-           
-           return (
+        {artworks.map((art) => (
             <Grid size={{ xs: 12, sm: 6, md: 4 }} key={art.id}>
               <ArtCard 
                 title={art.title} 
                 category={art.category}
-                image={imgSrc}
-                onClick={() => handleImageClick(imgSrc)}
+                image={art.image}
+                onClick={() => handleImageClick(art.image)}
               />
             </Grid>
-          );
-        })}
+        ))}
       </Grid>
 
       <Dialog 
