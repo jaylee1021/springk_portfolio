@@ -8,7 +8,7 @@ export default function About() {
   return (
     <Container maxWidth="md" sx={{ py: 8 }}>
       <Typography variant="h2" gutterBottom>
-        About the Artist
+        About SpringK
       </Typography>
       <Box sx={{ my: 4 }}>
         <Typography variant="body1" paragraph>
