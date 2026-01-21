@@ -1,9 +1,8 @@
 {
-  "name": "springk-portfolio",
+  "name": "springkportfolio",
   "compatibility_date": "2026-01-21",
   "assets": {
-    "directory": "./out",
-    "binding": "ASSETS"
+    "directory": "./out"
   },
   "compatibility_flags": ["nodejs_compat"]
 }
