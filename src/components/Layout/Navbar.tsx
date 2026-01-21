@@ -6,7 +6,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import Image from 'next/image';
+
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Link from 'next/link';
@@ -42,9 +42,13 @@ export default function Navbar() {
               display: { xs: 'flex', md: 'flex' },
               flexGrow: { xs: 1, md: 0 },
               alignItems: 'center',
+              textDecoration: 'none',
+              color: 'text.primary',
             }}
           >
-            <Image src="/springk_logo_no_char.png" alt="SpringK" width={182} height={92} />
+            <Typography variant="h4" noWrap component="div" sx={{ fontWeight: 700 }}>
+              SpringK
+            </Typography>
           </Box>
 
           {/* Desktop Menu */}
