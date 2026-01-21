@@ -2,13 +2,16 @@
 
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
+import Image from 'next/image';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Typography from '@mui/material/Typography';
 
 const pages = [
   { name: 'Gallery', path: '/' },
@@ -18,31 +21,34 @@ const pages = [
 
 export default function Navbar() {
   const pathname = usePathname();
+  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
+
+  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorElNav(event.currentTarget);
+  };
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
 
   return (
     <AppBar position="static" color="transparent" elevation={0}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Typography
-            variant="h6"
-            noWrap
-            component={Link}
+          <Box component={Link}
             href="/"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-              flexGrow: 1,
+              flexGrow: { xs: 1, md: 0 },
+              alignItems: 'center',
             }}
           >
-            SPRINGK
-          </Typography>
+            <Image src="/springk_logo_no_char.png" alt="SpringK" width={182} height={92} />
+          </Box>
 
-          <Box sx={{ display: 'flex', gap: 2 }}>
+          {/* Desktop Menu */}
+          <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 2, ml: 'auto' }}>
             {pages.map((page) => (
               <Button
                 key={page.name}
@@ -60,6 +66,44 @@ export default function Navbar() {
                 {page.name}
               </Button>
             ))}
+          </Box>
+
+          {/* Mobile Menu */}
+          <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+            <Button
+              onClick={handleOpenNavMenu}
+              sx={{ color: 'text.primary', minWidth: 'auto', p: 1 }}
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </Button>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'right',
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'right',
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: 'block', md: 'none' },
+              }}
+            >
+              {pages.map((page) => (
+                <MenuItem key={page.name} onClick={handleCloseNavMenu} component={Link} href={page.path}>
+                  <Typography textAlign="center" sx={{ fontWeight: pathname === page.path ? 700 : 400 }}>{page.name}</Typography>
+                </MenuItem>
+              ))}
+            </Menu>
           </Box>
         </Toolbar>
       </Container>
