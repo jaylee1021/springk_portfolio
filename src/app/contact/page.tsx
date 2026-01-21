@@ -39,6 +39,13 @@ export default function Contact() {
       const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || ''; 
       const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '';
       const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || '';
+      
+      console.log('Attempting to send email with:', { 
+        serviceId, 
+        templateId, 
+        publicKeyExists: !!publicKey,
+        formData 
+      });
 
       const templateParams = {
         from_name: formData.name,
