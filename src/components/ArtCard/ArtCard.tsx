@@ -2,8 +2,9 @@
 
 import * as React from 'react';
 import Card from '@mui/material/Card';
-import CardMedia from '@mui/material/CardMedia';
+import Box from '@mui/material/Box';
 import CardContent from '@mui/material/CardContent';
+import Image from 'next/image';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
@@ -18,15 +19,15 @@ export default function ArtCard({ title, image, category, onClick }: ArtCardProp
   return (
     <Card sx={{ maxWidth: '100%', height: '100%', borderRadius: 0, boxShadow: 0, bgcolor: 'transparent' }}>
       <CardActionArea onClick={onClick}>
-        <CardMedia
-          component="div"
-          sx={{
-            pt: '100%', // Square aspect ratio
-            backgroundColor: 'grey.200',
-            position: 'relative',
-          }}
-          image={image}
-        />
+        <Box sx={{ position: 'relative', pt: '100%', backgroundColor: 'grey.200' }}>
+          <Image
+            src={image}
+            alt={title}
+            fill
+            sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+            style={{ objectFit: 'cover' }}
+          />
+        </Box>
         <CardContent sx={{ px: 0 }}>
           <Typography gutterBottom variant="h6" component="div">
             {title}
