@@ -36,9 +36,9 @@ export default function Contact() {
     if (formData.name && formData.email && formData.message) {
       setLoading(true);
       
-      const serviceId = 'service_09qztxg'; // Replace with process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
-      const templateId = 'template_ugsb9om'; // Replace with process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
-      const publicKey = '97iQ589M9zACk5NYA'; // Replace with process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || ''; 
+      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '';
+      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || '';
 
       const templateParams = {
         from_name: formData.name,
