@@ -7,24 +7,13 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import ArtCard from '@/components/ArtCard/ArtCard';
 
-import Dialog from '@mui/material/Dialog';
-import DialogContent from '@mui/material/DialogContent';
-
+import Link from 'next/link';
 import { artworks } from '@/data/artworks';
 
 import SplashScreen from '@/components/Splash/SplashScreen';
 
 export default function Home() {
   const [showSplash, setShowSplash] = React.useState(true);
-  const [selectedImage, setSelectedImage] = React.useState<string | null>(null);
-
-  const handleImageClick = (image: string) => {
-    setSelectedImage(image);
-  };
-
-  const handleClose = () => {
-    setSelectedImage(null);
-  };
 
   if (showSplash) {
     return <SplashScreen onEnter={() => setShowSplash(false)} />;
@@ -40,41 +29,17 @@ export default function Home() {
 
       <Grid container spacing={4}>
         {artworks.map((art) => (
-            <Grid size={{ xs: 12, sm: 6, md: 4 }} key={art.id}>
-              <ArtCard 
-                title={art.title} 
+          <Grid size={{ xs: 12, sm: 6, md: 4 }} key={art.id}>
+            <Link href={`/artwork/${art.id}`} style={{ textDecoration: 'none' }}>
+              <ArtCard
+                title={art.title}
                 category={art.category}
                 image={art.image}
-                onClick={() => handleImageClick(art.image)}
               />
-            </Grid>
+            </Link>
+          </Grid>
         ))}
       </Grid>
-
-      <Dialog 
-        open={Boolean(selectedImage)} 
-        onClose={handleClose}
-        maxWidth="lg"
-        PaperProps={{
-          style: { backgroundColor: 'transparent', boxShadow: 'none' }
-        }}
-      >
-        <DialogContent sx={{ p: 0, position: 'relative' }} onClick={handleClose}>
-          {selectedImage && (
-            <img 
-              src={selectedImage} 
-              alt="Art Preview" 
-              style={{ 
-                maxWidth: '100%', 
-                maxHeight: '90vh', 
-                display: 'block', 
-                margin: 'auto',
-                cursor: 'pointer'
-              }} 
-            />
-          )}
-        </DialogContent>
-      </Dialog>
     </Container>
   );
 }
