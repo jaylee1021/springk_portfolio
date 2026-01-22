@@ -36,9 +36,10 @@ export default function SplashScreen({ onEnter }: SplashScreenProps) {
         }}
       >
         <Image
-          src="/springk_logo.png"
+          src="/spring_days_logo.png"
           alt="SpringK Portfolio"
-          fill
+          width={400}
+          height={400}
           sizes="100vw"
           priority
           style={{ objectFit: 'contain', padding: '20px' }}
