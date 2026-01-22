@@ -14,7 +14,7 @@ import { usePathname } from 'next/navigation';
 import Typography from '@mui/material/Typography';
 
 const pages = [
-  { name: 'Gallery', path: '/' },
+  { name: 'Art Work', path: '/' },
   { name: 'About', path: '/about' },
   { name: 'Contact', path: '/contact' },
 ];
