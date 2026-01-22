@@ -20,7 +20,6 @@ export default function SplashScreen({ onEnter }: SplashScreenProps) {
   return (
     <Fade in={visible} timeout={500}>
       <Box
-        onClick={handleClick}
         sx={{
           position: 'fixed',
           top: 0,
@@ -32,17 +31,17 @@ export default function SplashScreen({ onEnter }: SplashScreenProps) {
           justifyContent: 'center',
           alignItems: 'center',
           zIndex: 9999,
-          cursor: 'pointer',
         }}
       >
         <Image
+          onClick={handleClick}
           src="/spring_days_logo.png"
-          alt="SpringK Portfolio"
+          alt="Spring days"
           width={400}
           height={400}
           sizes="100vw"
           priority
-          style={{ objectFit: 'contain', padding: '20px' }}
+          style={{ objectFit: 'contain', padding: '20px', cursor: 'pointer' }}
         />
       </Box>
     </Fade>
