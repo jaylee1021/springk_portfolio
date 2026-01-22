@@ -5,7 +5,7 @@ import Footer from "@/components/Layout/Footer";
 import Box from "@mui/material/Box";
 
 export const metadata: Metadata = {
-  title: "SpringK Portfolio",
+  title: "Spring Days",
   description: "Art Portfolio by SpringK",
 };
 
