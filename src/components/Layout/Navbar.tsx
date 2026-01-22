@@ -16,6 +16,7 @@ import Typography from '@mui/material/Typography';
 const pages = [
   { name: 'Art Work', path: '/' },
   { name: 'About', path: '/about' },
+  { name: 'Characters', path: '/characters' },
   { name: 'Contact', path: '/contact' },
 ];
 
