@@ -47,7 +47,7 @@ export default function Navbar() {
               color: 'text.primary',
             }}
           >
-            <Typography variant="h4" noWrap component="div" sx={{ fontWeight: 700 }}>
+            <Typography variant="h4" noWrap component="div" sx={{ fontWeight: 400 }}>
               Spring days
             </Typography>
           </Box>
