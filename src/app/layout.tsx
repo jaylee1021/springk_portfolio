@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   description: "Art Portfolio by SpringK",
 };
 
+import { SplashProvider } from "@/context/SplashContext";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -18,19 +20,21 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ThemeRegistry>
-          <Box
-            sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              minHeight: '100vh',
-            }}
-          >
-            <Navbar />
-            <Box component="main" sx={{ flexGrow: 1 }}>
-              {children}
+          <SplashProvider>
+            <Box
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                minHeight: '100vh',
+              }}
+            >
+              <Navbar />
+              <Box component="main" sx={{ flexGrow: 1 }}>
+                {children}
+              </Box>
+              <Footer />
             </Box>
-            <Footer />
-          </Box>
+          </SplashProvider>
         </ThemeRegistry>
       </body>
     </html>

@@ -12,11 +12,13 @@ import { artworks } from '@/data/artworks';
 
 import SplashScreen from '@/components/Splash/SplashScreen';
 
-export default function Home() {
-  const [showSplash, setShowSplash] = React.useState(true);
+import { useSplash } from '@/context/SplashContext';
 
-  if (showSplash) {
-    return <SplashScreen onEnter={() => setShowSplash(false)} />;
+export default function Home() {
+  const { hasShownSplash, setHasShownSplash } = useSplash();
+
+  if (!hasShownSplash) {
+    return <SplashScreen onEnter={() => setHasShownSplash(true)} />;
   }
 
   return (
