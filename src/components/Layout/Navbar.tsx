@@ -33,7 +33,7 @@ export default function Navbar() {
   };
 
   return (
-    <AppBar position="static" color="transparent" elevation={0}>
+    <AppBar position="static" sx={{ backgroundColor: '#ffe4e1' }} elevation={0}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box component={Link}
