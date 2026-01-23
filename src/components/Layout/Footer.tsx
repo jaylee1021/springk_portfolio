@@ -21,7 +21,7 @@ function Copyright() {
 
 export default function Footer() {
   return (
-    <Box component="footer" sx={{ bgcolor: 'background.paper', py: 6, mt: 'auto' }}>
+    <Box component="footer" sx={{ backgroundColor: '#ffe4e1', py: 6, mt: 'auto' }}>
       <Container maxWidth="lg">
         <Typography variant="h6" align="center" gutterBottom>
           Spring days
