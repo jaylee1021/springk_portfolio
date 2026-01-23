@@ -11,7 +11,7 @@ export default function About() {
         About Spring
       </Typography>
       <Box sx={{ my: 4 }}>
-        <Typography variant="body1" sx={{ mb: 2 }}>
+        {/* <Typography variant="body1" sx={{ mb: 2 }}>
           As a child, I struggled with severe health issues that frequently confined me to the hospital. While my physical world was limited by pain, my creative world was not; art became the one interest I never had to give up.
         </Typography>
         <Typography variant="body1" sx={{ mb: 2 }}>
@@ -37,9 +37,9 @@ export default function About() {
           <Typography variant="body1">
             • <strong>Bachelor of Fine Arts</strong>, Dankook University
           </Typography>
-        </Box>
+        </Box> */}
 
-        <Box sx={{ my: 6, borderTop: '1px solid', borderColor: 'divider' }} />
+        {/* <Box sx={{ my: 6, borderTop: '1px solid', borderColor: 'divider' }} />
 
         <Typography variant="body1" sx={{ mb: 2 }}>
           어린 시절, 저는 병원에서 자주 시간을 보내야 할 만큼 심각한 건강 문제로 고생했습니다. 고통으로 인해 저의 육체적인 세상은 제한되었지만, 창의적인 세상은 그렇지 않았습니다. 예술은 제가 결코 포기할 필요가 없었던 유일한 즐거움이었습니다.
@@ -67,7 +67,7 @@ export default function About() {
           <Typography variant="body1">
             • <strong>단국대학교 예술대학</strong> 서양화과 졸업
           </Typography>
-        </Box>
+        </Box> */}
       </Box>
     </Container>
   );
