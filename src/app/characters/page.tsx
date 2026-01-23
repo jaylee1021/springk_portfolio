@@ -5,12 +5,14 @@ import Typography from '@mui/material/Typography';
 
 export default function Characters() {
     return (
-        <Container maxWidth="xl" sx={{ py: 8 }}>
-            <Box sx={{ mb: 6, textAlign: 'center' }}>
-                <Typography variant="h1" component="h1" gutterBottom>
-                    Characters
-                </Typography>
-            </Box>
-        </Container>
+        <Box sx={{ minHeight: '100vh', backgroundColor: '#ffe4e1', py: 8 }}>
+            <Container maxWidth="xl">
+                <Box sx={{ mb: 6, textAlign: 'center' }}>
+                    <Typography variant="h1" component="h1" gutterBottom>
+                        Characters
+                    </Typography>
+                </Box>
+            </Container>
+        </Box>
     );
 }
