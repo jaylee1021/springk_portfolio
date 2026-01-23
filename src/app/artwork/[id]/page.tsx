@@ -44,7 +44,7 @@ export default async function ArtworkPage({
                     color="primary"
                     sx={{ mt: 2 }}
                 >
-                    Back to Gallery
+                    Back to Art work
                 </Button>
             </Container>
         );

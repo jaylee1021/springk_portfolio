@@ -15,8 +15,8 @@ import Typography from '@mui/material/Typography';
 
 const pages = [
   { name: 'Art Work', path: '/' },
-  { name: 'About', path: '/about' },
   { name: 'Characters', path: '/characters' },
+  { name: 'About', path: '/about' },
   { name: 'Contact', path: '/contact' },
 ];
 
@@ -48,7 +48,7 @@ export default function Navbar() {
             }}
           >
             <Typography variant="h4" noWrap component="div" sx={{ fontWeight: 700 }}>
-              SpringK
+              Spring days
             </Typography>
           </Box>
 

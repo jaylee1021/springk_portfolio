@@ -11,7 +11,7 @@ function Copyright() {
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="/">
-        SpringK Art
+        Spring days
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -24,7 +24,7 @@ export default function Footer() {
     <Box component="footer" sx={{ bgcolor: 'background.paper', py: 6, mt: 'auto' }}>
       <Container maxWidth="lg">
         <Typography variant="h6" align="center" gutterBottom>
-          SpringK
+          Spring days
         </Typography>
         <Typography
           variant="subtitle1"

@@ -32,7 +32,7 @@ export default function ArtDetail({ title, category, image }: ArtDetailProps) {
                         }
                     }}
                 >
-                    Back to Gallery
+                    Back to Art Work
                 </Button>
             </Box>
 
