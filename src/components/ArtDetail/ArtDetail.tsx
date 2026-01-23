@@ -49,7 +49,6 @@ export default function ArtDetail({ title, category, image }: ArtDetailProps) {
                     borderRadius: 2,
                     overflow: 'hidden',
                     backgroundColor: '#f5f5f5',
-                    minHeight: '400px'
                 }}>
                     <Image
                         src={image}
