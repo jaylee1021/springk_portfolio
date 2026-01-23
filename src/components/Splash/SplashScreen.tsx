@@ -37,8 +37,8 @@ export default function SplashScreen({ onEnter }: SplashScreenProps) {
           onClick={handleClick}
           src="/spring_days_logo.png"
           alt="Spring days"
-          width={400}
-          height={400}
+          width={1000}
+          height={1000}
           sizes="100vw"
           priority
           style={{ objectFit: 'contain', padding: '20px', cursor: 'pointer' }}
