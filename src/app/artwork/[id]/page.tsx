@@ -50,12 +50,18 @@ export default async function ArtworkPage({
         );
     }
 
+    const currentIndex = artworks.findIndex(art => art.id === artwork.id);
+    const prevArtwork = currentIndex > 0 ? artworks[currentIndex - 1] : null;
+    const nextArtwork = currentIndex < artworks.length - 1 ? artworks[currentIndex + 1] : null;
+
     return (
         <ArtDetail
             title={artwork.title}
             category={artwork.category}
             image={artwork.image}
             size={artwork.size}
+            prevId={prevArtwork?.id}
+            nextId={nextArtwork?.id}
         />
     );
 }

@@ -6,26 +6,27 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 
 interface ArtDetailProps {
     title: string;
     category: string;
     image: string;
     size?: string;
+    prevId?: number;
+    nextId?: number;
 }
 
-export default function ArtDetail({ title, category, image, size }: ArtDetailProps) {
-    const router = useRouter();
-
+export default function ArtDetail({ title, category, image, size, prevId, nextId }: ArtDetailProps) {
     return (
         <Container maxWidth="xl" sx={{ py: 8 }}>
             <Box sx={{ mb: 4 }}>
                 <Button
+                    component={Link}
+                    href="/"
                     startIcon={<ArrowBackIcon />}
-                    onClick={() => router.back()}
                     sx={{
                         color: 'text.primary',
                         '&:hover': {
@@ -43,28 +44,53 @@ export default function ArtDetail({ title, category, image, size }: ArtDetailPro
                 gap: 6,
                 alignItems: 'flex-start'
             }}>
-                <Box sx={{
-                    flex: '1 1 60%',
-                    width: '100%',
-                    position: 'relative',
-                    borderRadius: 2,
-                    overflow: 'hidden',
-                    backgroundColor: '#f5f5f5',
-                }}>
-                    <Image
-                        src={image}
-                        alt={title}
-                        width={1200}
-                        height={900}
-                        style={{
-                            width: '100%',
-                            height: 'auto',
-                            display: 'block',
-                            objectFit: 'contain',
-                            maxHeight: '80vh'
-                        }}
-                        priority
-                    />
+                <Box sx={{ flex: '1 1 60%', width: '100%' }}>
+                    <Box sx={{
+                        position: 'relative',
+                        borderRadius: 2,
+                        overflow: 'hidden',
+                        backgroundColor: '#f5f5f5',
+                        mb: 4
+                    }}>
+                        <Image
+                            src={image}
+                            alt={title}
+                            width={1200}
+                            height={900}
+                            style={{
+                                width: '100%',
+                                height: 'auto',
+                                display: 'block',
+                                objectFit: 'contain',
+                                maxHeight: '80vh'
+                            }}
+                            priority
+                        />
+                    </Box>
+
+                    <Box sx={{ display: 'flex', width: '100%', justifyContent: 'space-between' }}>
+                        {prevId ? (
+                            <Button
+                                component={Link}
+                                href={`/artwork/${prevId}`}
+                                startIcon={<ArrowBackIcon />}
+                                color="inherit"
+                            >
+                                Previous
+                            </Button>
+                        ) : <Box />}
+
+                        {nextId && (
+                            <Button
+                                component={Link}
+                                href={`/artwork/${nextId}`}
+                                endIcon={<ArrowForwardIcon />}
+                                color="inherit"
+                            >
+                                Next
+                            </Button>
+                        )}
+                    </Box>
                 </Box>
 
                 <Box sx={{ flex: '1 1 40%', width: '100%' }}>
