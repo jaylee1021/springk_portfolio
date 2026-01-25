@@ -11,63 +11,163 @@ export default function About() {
         About Spring
       </Typography>
       <Box sx={{ my: 4 }}>
-        {/* <Typography variant="body1" sx={{ mb: 2 }}>
-          As a child, I struggled with severe health issues that frequently confined me to the hospital. While my physical world was limited by pain, my creative world was not; art became the one interest I never had to give up.
+        {/* Spring vibes Section */}
+        <Typography variant="h6" sx={{ color: 'text.secondary', mb: 2, mt: 4 }}>
+          / Spring vibes ✿ ♡݁｡ᡘ֯ .ܸ ݂ .ܸ ྀི১݂ ✿
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 1 }}>
+          진솔함. 진정성있는 그런 이야기를 하고싶었다.
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 4 }}>
+          느낌 - 어떠한 것을 바라본 것 / 감정, 그것으로 부터 시작 된 생각. 같은 공간에서도 서로가 조금씩은 다를 수 밖에 없는 그런 내면의 느낌
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 1 }}>
+          Sincerity. I wanted to share a story with authenticity.
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 4 }}>
+          Feeling — the gaze / emotion, and the thoughts that begin from it. The inner feeling that inevitably varies slightly for everyone, even in the same space.
+        </Typography>
+        {/* First - Story Section */}
+        <Typography variant="h6" sx={{ color: 'text.secondary', mb: 2, mt: 4 }}>
+          First - Story ໒꒰ྀི ˶• ༝ •˶ ꒱ྀི১
         </Typography>
         <Typography variant="body1" sx={{ mb: 2 }}>
-          I majored in Fine Arts at Dankook University. During my studies, I felt a compelling need to process the strong emotions of my youth, and I began incorporating medical themes and hospital imagery into my work. Through this process, I discovered that art was not just a hobby, but a pathway to recovery. I graduated with a focus on "Healing" and "Recovery"—themes that remain central to my practice today.
+          회복과 치유는 계속적으로 내가 해 온 - 이어갈 이야기이다. 예술은 많은 이들에게 다양한 의미를 갖는다. 나에게 있어서 예술은 감정을 움직여주며 누군가를 포용하는 것이면 좋겠다. 내면의 아이와 과거의 경험을 통한 현재의 느낌을 그려내 새로운 공간이 된다. 어쩌면 작업의 동기를 가지고 작업을 진행해 나간다는 거 자체가 의미 있는 예술활동이다.
         </Typography>
         <Typography variant="body1" sx={{ mb: 2 }}>
-          Driven to understand the therapeutic power of creativity, I earned a Master’s degree in Art Education at the Graduate School of Hongik University. While there, I worked with children at a welfare center, witnessing firsthand how art could encourage and heal not only the students but the teacher as well.
+          주사기라는 설치 작업을 했었을 땐, 이전에 나를 아프게 했던 주사기였지만 이제는 작품을 만들기 위한 하나의 오브제로 변경시키고 그 것이 새로운 의미를 갖게 한다고 했었다. 작업으로 가져온 이유는 조금 다를 지라도 마치 요셉 보이스(Joseph Beuys)가 자신의 기억에 있는 펠트를 가지고 설치 작업을 했던 것처럼 그 물질을 작업으로 가져옴으로써 회복의 의미를 부여하려했던 것이다.
         </Typography>
-        <Typography variant="body1" sx={{ mb: 2 }}>
-          In 2015, I relocated to the United States with my family. The past decade has been a period of significant transition, adapting to a new culture and language while raising my children. Throughout this time, I maintained my artistic practice in my home studio, using small canvases and sketchbooks to keep my creative voice alive.
-        </Typography>
-        <Typography variant="body1" sx={{ mb: 2 }}>
-          Today, having established my life in the US, I am fully focused on my career as a professional artist. I am eager to exhibit my work in galleries and share my enduring message of hope and healing with a wider audience.
+        <Typography variant="body1" sx={{ mb: 4 }}>
+          병원을 그리는 것도 그랬다. 병원의 공간을 꾸미면서 그려내는 과정이 아픔으로부터의 자유와 그것을 극복했다는 회복과 그로인한 치유였다. 공간을 구성하여 면을 분할하고 그 안에 밝고 다양한 색채들을 채워 넣는 과정 - 마치 조각색종이를 맞추는 것처럼 나의 기억하나하나를 새롭게 밝은 의미로 채워 넣는 표현이기도 했다.
         </Typography>
 
-        <Box sx={{ mt: 4, mb: 2 }}>
-          <Typography variant="h5" gutterBottom sx={{ fontWeight: 'medium' }}>
-            Education
-          </Typography>
-          <Typography variant="body1">
-            • <strong>Master of Art Education</strong>, Graduate School of Hongik University
-          </Typography>
-          <Typography variant="body1">
-            • <strong>Bachelor of Fine Arts</strong>, Dankook University
-          </Typography>
-        </Box> */}
+        <Typography variant="body1" sx={{ mb: 2 }}>
+          Recovery and healing are the stories I have told continuously—and will continue to tell. Art holds various meanings for many people. To me, I hope art moves emotions and embraces someone. It depicts the inner child and current feelings through past experiences, creating a new space. Perhaps the act of proceeding with work motivated by a purpose is meaningful artistic activity in itself.
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 2 }}>
+          When I created an installation art using syringes, I explained that although they were objects that had once caused me pain, I was transforming them into objects for creating art, giving them a new meaning. Although the reason for using them might be slightly different, just as Joseph Beuys used felt from his memories for installation work, I attempted to imbue the meaning of recovery by bringing that material into my work.
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 4 }}>
+          Painting hospitals was similar. The process of decorating and depicting the hospital space was freedom from pain, a recovery that overcame it, and the resulting healing. The process of constructing the space, dividing the planes, and filling them with bright and diverse colors—like fitting together pieces of colored paper—was an expression of filling each of my memories with new, bright meanings.
+        </Typography>
+        {/* Second - to go Section */}
+        <Typography variant="h6" sx={{ color: 'text.secondary', mb: 2, mt: 4 }}>
+          Second - to go ૮꒰ ྀི𓂂•  ̫ •𓂂꒱ა ⌯♡
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 4 }}>
+          그 다음에는 치유와 회복의 이미지들을 담기 시작했다. 아이스크림- 우는 아이들에게 아이스크림 같은 달콤한 간식을 건넸을때 기분이 나아지고 울음이 그치는 그런 것들. 그래서 도넛박스에, 커피 투고 캐리어에, 휘핑크림안에 담아 순간의 쉼이 될 수 있길, 저기압된 기분이 한층 밝아질 수 있길 바랐다. 손에서 손으로 전달할 수 있는 것들을 그려 - 마음을 전하고, 위로를 건넨다
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 4 }}>
+          Next, I began to capture images of healing and recovery. Ice cream—like offering sweet snacks to crying children to make them feel better and stop their tears. By filling donut boxes, coffee to-go carriers, and whipped cream, I hoped they could become a moment of rest, brightening low spirits. Drawing things that can be passed from hand to hand—conveying my heart and offering comfort.
+        </Typography>
+        {/* Saebom kim Section */}
+        <Typography variant="h6" sx={{ color: 'text.secondary', mb: 2, mt: 4 }}>
+          / Saebom kim ᡣ . ٜ̥ .ྀི 𑁩ཾיִ ✿
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 1 }}>
+          그림을 본 나를 아는 사람들은 그림이 꼭 너 같다고 한다.
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 1 }}>
+          병실의 공간을 재해석해서 그린 그림을 나중에야 본 엄마는 한편으로는 마음 아파했다.
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 1 }}>
+          내용을 들여다보기전 처음 그림을 본 사람들은 밝은색감에 - 밝은-화사한 느낌을 받는다.
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 1 }}>
+          호텔인가? 라는 생각, 같이 놀러온 방인가? 라는 느낌.
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 1 }}>
+          생각해보면 숨지않았던 것 같다. 그리고 아팠다고 해서 힘들다고 해서 그만하고 싶었던 것도 아니었다.
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 1 }}>
+          나를 드러냈다기보단 내가 녹아 스며들어진 작업, 그린 -그림.
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 4 }}>
+          그림 앞에서 느끼고 그림에 담은 분위기를 전달 받는 것 - 색감을 물성화한 회화작업이 가진 힘 인듯하다.
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 1 }}>
+          People who know me say my paintings look just like me.
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 1 }}>
+          My mother, seeing my paintings reinterpreting hospital rooms later, felt heartbroken.
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 1 }}>
+          But viewing them without context, people get a bright, radiant feeling from the colors.
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 1 }}>
+          &quot;Is it a hotel?&quot; &quot;Is it a party room?&quot;
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 1 }}>
+          Thinking back, I didn't hide. And just because I was sick or struggling didn't mean I wanted to stop.
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 1 }}>
+          Rather than revealing myself, these are works where I melted and seeped in.
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 4 }}>
+          Feeling the atmosphere in front of the painting and receiving what it holds—that seems to be the power of painting that materializes color.
+        </Typography>
+        <Box sx={{ my: 6, borderTop: '1px solid', borderColor: 'divider' }} />
 
-        {/* <Box sx={{ my: 6, borderTop: '1px solid', borderColor: 'divider' }} />
+        {/* English Version */}
 
-        <Typography variant="body1" sx={{ mb: 2 }}>
-          어린 시절, 저는 병원에서 자주 시간을 보내야 할 만큼 심각한 건강 문제로 고생했습니다. 고통으로 인해 저의 육체적인 세상은 제한되었지만, 창의적인 세상은 그렇지 않았습니다. 예술은 제가 결코 포기할 필요가 없었던 유일한 즐거움이었습니다.
+        {/* Spring vibes Section */}
+        {/* <Typography variant="h6" sx={{ color: 'text.secondary', mb: 2, mt: 4 }}>
+          / Spring vibes ✿ ♡݁｡ᡘ֯ .ܸ ݂ .ܸ ྀི১݂ ✿
         </Typography>
-        <Typography variant="body1" sx={{ mb: 2 }}>
-          단국대학교 미술대학에서 서양화를 전공했습니다. 대학 재학 중, 어린 시절의 강렬한 감정들을 표현하고 싶은 강한 욕구를 느꼈고, 병원과 관련된 주제들을 작품에 담기 시작했습니다. 이 과정을 통해 예술이 단지 취미가 아니라 회복으로 가는 길임을 깨달았습니다. 저는 "치유"와 "회복"이라는 주제에 집중하여 졸업했으며, 이는 오늘날까지 제 작품 세계의 중심이 되고 있습니다.
+        <Typography variant="body1" sx={{ mb: 1 }}>
+          Sincerity. I wanted to share a story with authenticity.
         </Typography>
-        <Typography variant="body1" sx={{ mb: 2 }}>
-          창의력의 치유적 힘을 이해하고자 홍익대학교 교육대학원에서 미술교육 석사 학위를 취득했습니다. 대학원 재학 시절, 복지관에서 아이들을 가르치며 미술이 학생뿐만 아니라 교사 스스로에게도 격려와 치유가 될 수 있음을 직접 경험했습니다.
-        </Typography>
-        <Typography variant="body1" sx={{ mb: 2 }}>
-          2015년, 가족과 함께 미국으로 이주했습니다. 지난 10년은 새로운 문화와 언어에 적응하며 아이들을 키우는 중요한 변화의 시기였습니다. 이 기간 동안에도 저는 집 안의 작은 스튜디오에서 스케치북과 작은 캔버스에 그림을 그리며 창작 활동을 이어왔습니다.
-        </Typography>
-        <Typography variant="body1" sx={{ mb: 2 }}>
-          이제 미국에서의 삶에 정착한 저는 전문 작가로서의 경력에 온전히 집중하고 있습니다. 갤러리 전시를 통해 저의 작품을 선보이고, 예술을 통한 희망과 치유의 메시지를 더 많은 분들과 나누고 싶습니다.
-        </Typography>
+        <Typography variant="body1" sx={{ mb: 4 }}>
+          Feeling — observing something / emotion, and the thoughts that begin from it. The inner feeling that inevitably varies slightly for everyone, even in the same space.
+        </Typography> */}
 
-        <Box sx={{ mt: 4, mb: 2 }}>
-          <Typography variant="h5" gutterBottom sx={{ fontWeight: 'medium' }}>
-            학력
-          </Typography>
-          <Typography variant="body1">
-            • <strong>홍익대학교 대학원</strong> 미술교육전공 석사 졸업
-          </Typography>
-          <Typography variant="body1">
-            • <strong>단국대학교 예술대학</strong> 서양화과 졸업
-          </Typography>
-        </Box> */}
+        {/* First - Story Section */}
+        {/* <Typography variant="h6" sx={{ color: 'text.secondary', mb: 2, mt: 4 }}>
+          First - Story ໒꒰ྀི ˶• ༝ •˶ ꒱ྀི১
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 2 }}>
+          Recovery and healing are the stories I have told continuously—and will continue to tell. Art holds various meanings for many people. To me, I hope art moves emotions and embraces someone. It depicts the inner child and current feelings through past experiences, creating a new space. Perhaps the act of proceeding with work motivated by a purpose is meaningful artistic activity in itself.
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 2 }}>
+          When I created an installation art using syringes, I explained that although they were objects that had once caused me pain, I was transforming them into objects for creating art, giving them a new meaning. Although the reason for using them might be slightly different, just as Joseph Beuys used felt from his memories for installation work, I attempted to imbue the meaning of recovery by bringing that material into my work.
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 4 }}>
+          Painting hospitals was similar. The process of decorating and depicting the hospital space was freedom from pain, a recovery that overcame it, and the resulting healing. The process of constructing the space, dividing the planes, and filling them with bright and diverse colors—like fitting together pieces of colored paper—was an expression of filling each of my memories with new, bright meanings.
+        </Typography> */}
+
+        {/* Second - to go Section */}
+        {/* <Typography variant="h6" sx={{ color: 'text.secondary', mb: 2, mt: 4 }}>
+          Second - to go ૮꒰ ྀི𓂂•  ̫ •𓂂꒱ა ⌯♡
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 4 }}>
+          Next, I began to capture images of healing and recovery. Ice cream—like offering sweet snacks to crying children to make them feel better and stop their tears. By filling donut boxes, coffee to-go carriers, and whipped cream, I hoped they could become a moment of rest, brightening low spirits. Drawing things that can be passed from hand to hand—conveying my heart and offering comfort.
+        </Typography> */}
+
+        {/* Saebom kim Section */}
+        {/* <Typography variant="h6" sx={{ color: 'text.secondary', mb: 2, mt: 4 }}>
+          / Saebom kim ᡣ . ٜ̥ .ྀི 𑁩ཾיִ ✿
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 1 }}>
+          People who know me say my paintings look just like me.
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 1 }}>
+          My mother, seeing my paintings reinterpreting hospital rooms later, felt heartbroken.
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 1 }}>
+          But viewing them without context, people get a bright, radiant feeling from the colors.
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 1 }}>
+          &quot;Is it a hotel?&quot; &quot;Is it a party room?&quot;
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 1 }}>
+          Thinking back, I didn't hide. And just because I was sick or struggling didn't mean I wanted to stop.
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 1 }}>
+          Rather than revealing myself, these are works where I melted and seeped in.
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 4 }}>
+          Feeling the atmosphere in front of the painting and receiving what it holds—that seems to be the power of painting that materializes color.
+        </Typography> */}
       </Box>
     </Container>
   );
