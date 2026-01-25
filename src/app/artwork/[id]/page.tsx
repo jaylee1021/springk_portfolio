@@ -55,6 +55,7 @@ export default async function ArtworkPage({
             title={artwork.title}
             category={artwork.category}
             image={artwork.image}
+            size={artwork.size}
         />
     );
 }

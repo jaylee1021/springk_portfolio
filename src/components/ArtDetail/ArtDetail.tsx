@@ -14,9 +14,10 @@ interface ArtDetailProps {
     title: string;
     category: string;
     image: string;
+    size?: string;
 }
 
-export default function ArtDetail({ title, category, image }: ArtDetailProps) {
+export default function ArtDetail({ title, category, image, size }: ArtDetailProps) {
     const router = useRouter();
 
     return (
@@ -71,14 +72,20 @@ export default function ArtDetail({ title, category, image }: ArtDetailProps) {
                         {title}
                     </Typography>
 
-                    <Typography variant="h5" color="text.secondary" gutterBottom sx={{ mb: 4 }}>
+                    <Typography variant="h5" color="text.secondary" gutterBottom sx={{ mb: 2 }}>
                         {category}
                     </Typography>
+
+                    {size && (
+                        <Typography variant="h6" color="text.secondary" gutterBottom sx={{ mb: 4, fontWeight: 'normal' }}>
+                            {size}
+                        </Typography>
+                    )}
 
                     <Box sx={{ mt: 4, pt: 4, borderTop: '1px solid', borderColor: 'divider' }}>
                         {/* Future metadata can go here like year, dimensions, etc if available in data */}
                         <Typography variant="body1" color="text.secondary">
-                            SpringK Original Artwork
+                            Spring days Original Artwork
                         </Typography>
                     </Box>
                 </Box>
