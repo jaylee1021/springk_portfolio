@@ -7,9 +7,6 @@ import Box from '@mui/material/Box';
 export default function About() {
   return (
     <Container maxWidth="md" sx={{ py: 8 }}>
-      <Typography variant="h2" gutterBottom>
-        About Spring
-      </Typography>
       <Box sx={{ my: 4 }}>
         {/* Spring vibes Section */}
         <Typography variant="h6" sx={{ color: 'text.secondary', mb: 2, mt: 4 }}>
