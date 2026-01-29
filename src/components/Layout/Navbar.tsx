@@ -12,10 +12,11 @@ import Container from '@mui/material/Container';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Typography from '@mui/material/Typography';
+import { useSplash } from '@/context/SplashContext';
 
 const pages = [
   { name: 'Art Work', path: '/' },
-  { name: 'Characters', path: '/characters' },
+  // { name: 'Characters', path: '/characters' },
   { name: 'About', path: '/about' },
   { name: 'Contact', path: '/contact' },
 ];
@@ -23,6 +24,7 @@ const pages = [
 export default function Navbar() {
   const pathname = usePathname();
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
+  const { setHasShownSplash } = useSplash();
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -32,12 +34,17 @@ export default function Navbar() {
     setAnchorElNav(null);
   };
 
+  const handleLogoClick = () => {
+    setHasShownSplash(false);
+  };
+
   return (
     <AppBar position="static" sx={{ backgroundColor: '#ffe4e1' }} elevation={0}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box component={Link}
             href="/"
+            onClick={handleLogoClick}
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'flex' },
