@@ -61,6 +61,7 @@ export default function Navbar() {
           </Box> */}
           <Box component={Link}
             href="/"
+            onClick={handleLogoClick}
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'flex' },
