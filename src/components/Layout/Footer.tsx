@@ -21,13 +21,14 @@ function Copyright() {
 
 export default function Footer() {
   return (
-    <Box component="footer" sx={{ backgroundColor: '#ffe4e1', py: 6, mt: 'auto' }}>
+    // <Box component="footer" sx={{ backgroundImage: '#faa9ccff', py: 6, mt: 'auto' }}>
+    <Box component="footer" sx={{ backgroundImage: 'url(/background.png)', py: 6, mt: 'auto', backgroundPosition: 'center' }}>
       <Container maxWidth="lg">
         <Typography variant="h6" align="center" gutterBottom>
           Spring days
         </Typography>
         <Typography
-          variant="subtitle1"
+          variant="subtitle1" 
           align="center"
           color="text.secondary"
           component="p"
