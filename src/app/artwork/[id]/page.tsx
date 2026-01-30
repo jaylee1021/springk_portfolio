@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { artworks } from '@/data/artworks';
 import ArtDetail from '@/components/ArtDetail/ArtDetail';
-import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
@@ -18,6 +17,34 @@ export function generateStaticParams() {
     return artworks.map((art) => ({
         id: art.id.toString(),
     }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+    const { id } = await params;
+    const artwork = getArtwork(id);
+
+    if (!artwork) {
+        return {
+            title: 'Artwork Not Found',
+        };
+    }
+
+    return {
+        title: artwork.title,
+        description: `View ${artwork.title}, a ${artwork.category} artwork by SpringK.`,
+        openGraph: {
+            title: `${artwork.title} | Spring Days`,
+            description: `View ${artwork.title}, a ${artwork.category} artwork by SpringK.`,
+            images: [
+                {
+                    url: artwork.image,
+                    width: 800,
+                    height: 600,
+                    alt: artwork.title,
+                },
+            ],
+        },
+    };
 }
 
 export default async function ArtworkPage({
