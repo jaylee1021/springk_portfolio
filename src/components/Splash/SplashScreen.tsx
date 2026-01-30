@@ -12,6 +12,17 @@ interface SplashScreenProps {
 export default function SplashScreen({ onEnter }: SplashScreenProps) {
   const [visible, setVisible] = React.useState(true);
 
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 400);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   const handleClick = () => {
     setVisible(false);
     setTimeout(onEnter, 500);
@@ -26,7 +37,7 @@ export default function SplashScreen({ onEnter }: SplashScreenProps) {
           left: 0,
           width: '100vw',
           height: '100vh',
-          backgroundColor: 'background.default',
+          backgroundColor: isMobile ? 'background.default' : '#faecf2ff',
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
