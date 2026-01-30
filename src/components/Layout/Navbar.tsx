@@ -40,7 +40,7 @@ export default function Navbar() {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: '#faa9ccff' }} elevation={0}>
+    <AppBar position="static" sx={{ backgroundColor: '#ffd8e9' }} elevation={0}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* <Box component={Link}
