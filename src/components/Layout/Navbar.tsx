@@ -10,13 +10,14 @@ import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import Typography from '@mui/material/Typography';
 import { useSplash } from '@/context/SplashContext';
 
 const pages = [
   { name: 'Art Work', path: '/' },
-  // { name: 'Characters', path: '/characters' },
+  { name: 'Characters', path: '/characters' },
   { name: 'About', path: '/about' },
   { name: 'Contact', path: '/contact' },
 ];
@@ -39,10 +40,10 @@ export default function Navbar() {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: '#ffe4e1' }} elevation={0}>
+    <AppBar position="static" sx={{ backgroundColor: '#faa9ccff' }} elevation={0}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Box component={Link}
+          {/* <Box component={Link}
             href="/"
             onClick={handleLogoClick}
             sx={{
@@ -54,9 +55,20 @@ export default function Navbar() {
               color: 'text.primary',
             }}
           >
-            <Typography variant="h4" noWrap component="div" sx={{ fontWeight: 400 }}>
+            <Typography variant="h4" noWrap color='#fbe2f0ff' component="div" sx={{ fontWeight: 400 }}>
               Spring days
             </Typography>
+          </Box> */}
+          <Box component={Link}
+            href="/"
+            sx={{
+              mr: 2,
+              display: { xs: 'flex', md: 'flex' },
+              flexGrow: { xs: 1, md: 0 },
+              alignItems: 'center',
+            }}
+          >
+            <Image src="/spring_days_title.png" alt="Spring days" width={301} height={50} />
           </Box>
 
           {/* Desktop Menu */}
