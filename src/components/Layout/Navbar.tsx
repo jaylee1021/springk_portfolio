@@ -15,6 +15,7 @@ import { usePathname } from 'next/navigation';
 import Typography from '@mui/material/Typography';
 import { useSplash } from '@/context/SplashContext';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const pages = [
   { name: 'Art Work', path: '/' },
@@ -94,13 +95,8 @@ export default function Navbar() {
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
             <Button
               onClick={handleOpenNavMenu}
-              sx={{ color: 'text.primary', minWidth: 'auto', p: 1 }}
             >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-              </svg>
+              <MenuIcon />
             </Button>
             <Menu
               id="menu-appbar"
