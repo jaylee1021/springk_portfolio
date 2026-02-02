@@ -2,6 +2,12 @@
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Characters | Spring Days',
+    description: 'Character designs and illustrations',
+};
 
 export default function Characters() {
     return (
