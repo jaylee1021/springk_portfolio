@@ -33,7 +33,7 @@ export default function Footer() {
           color="text.secondary"
           component="p"
         >
-          Capturing moments in colors.
+          <Link href="mailto:izziccobom@gmail.com">izziccobom@gmail.com</Link>
         </Typography>
         <Copyright />
       </Container>
