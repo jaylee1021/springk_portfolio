@@ -14,12 +14,13 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import Typography from '@mui/material/Typography';
 import { useSplash } from '@/context/SplashContext';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 const pages = [
   { name: 'Art Work', path: '/' },
   { name: 'Characters', path: '/characters' },
   { name: 'About', path: '/about' },
-  { name: 'Contact', path: '/contact' },
+  // { name: 'Contact', path: '/contact' },
 ];
 
 export default function Navbar() {
@@ -43,22 +44,6 @@ export default function Navbar() {
     <AppBar position="static" sx={{ backgroundColor: '#ffd8e9' }} elevation={0}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          {/* <Box component={Link}
-            href="/"
-            onClick={handleLogoClick}
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'flex' },
-              flexGrow: { xs: 1, md: 0 },
-              alignItems: 'center',
-              textDecoration: 'none',
-              color: 'text.primary',
-            }}
-          >
-            <Typography variant="h4" noWrap color='#fbe2f0ff' component="div" sx={{ fontWeight: 400 }}>
-              Spring days
-            </Typography>
-          </Box> */}
           <Box component={Link}
             href="/"
             onClick={handleLogoClick}
@@ -91,6 +76,18 @@ export default function Navbar() {
                 {page.name}
               </Button>
             ))}
+            <Button
+              component={Link}
+              href="https://www.instagram.com/hispring_k"
+              target="_blank"
+              sx={{
+                my: 2,
+                color: 'text.primary',
+                display: 'block',
+              }}
+            >
+              <InstagramIcon />
+            </Button>
           </Box>
 
           {/* Mobile Menu */}
@@ -128,6 +125,10 @@ export default function Navbar() {
                   <Typography textAlign="center" sx={{ fontWeight: pathname === page.path ? 700 : 400 }}>{page.name}</Typography>
                 </MenuItem>
               ))}
+              <MenuItem onClick={handleCloseNavMenu} component={Link} href="https://www.instagram.com/hispring_k" target="_blank">
+                <InstagramIcon sx={{ mr: 1 }} />
+                <Typography textAlign="center" sx={{ fontWeight: 400 }}>Instagram</Typography>
+              </MenuItem>
             </Menu>
           </Box>
         </Toolbar>
