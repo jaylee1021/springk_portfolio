@@ -1,6 +1,6 @@
 'use client';
 
-import * as React from 'react';
+import { useState, useEffect } from 'react';
 import Box from '@mui/material/Box';
 import Image from 'next/image';
 import Fade from '@mui/material/Fade';
@@ -10,11 +10,11 @@ interface SplashScreenProps {
 }
 
 export default function SplashScreen({ onEnter }: SplashScreenProps) {
-  const [visible, setVisible] = React.useState(true);
+  const [visible, setVisible] = useState(true);
 
-  const [isMobile, setIsMobile] = React.useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth <= 400);
     };

@@ -1,4 +1,4 @@
-import * as React from 'react';
+
 import { artworks } from '@/data/artworks';
 import ArtDetail from '@/components/ArtDetail/ArtDetail';
 import Typography from '@mui/material/Typography';

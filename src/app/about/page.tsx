@@ -1,5 +1,4 @@
 
-import * as React from 'react';
 import type { Metadata } from 'next';
 import AboutClient from '@/components/About/AboutClient';
 

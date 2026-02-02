@@ -1,6 +1,6 @@
 'use client';
 
-import * as React from 'react';
+import React, { useState  } from 'react';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
@@ -14,10 +14,10 @@ import Alert from '@mui/material/Alert';
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
-  const [open, setOpen] = React.useState(false);
-  const [loading, setLoading] = React.useState(false);
-  const [submitted, setSubmitted] = React.useState(false);
-  const [formData, setFormData] = React.useState({
+  const [open, setOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
@@ -35,23 +35,23 @@ export default function Contact() {
     setSubmitted(true);
     if (formData.name && formData.email && formData.message) {
       setLoading(true);
-      
-      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || ''; 
+
+      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '';
       const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '';
       const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || '';
-      
-      console.log('Attempting to send email with:', { 
-        serviceId, 
-        templateId, 
+
+      console.log('Attempting to send email with:', {
+        serviceId,
+        templateId,
         publicKeyExists: !!publicKey,
-        formData 
+        formData
       });
 
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
         message: formData.message,
-        to_name: 'SpringK', 
+        to_name: 'SpringK',
       };
 
       try {
@@ -81,41 +81,41 @@ export default function Contact() {
       <Typography variant="body1" align="center" color="text.secondary" paragraph>
         Interested in purchasing a piece or commissioning a new work? Get in touch.
       </Typography>
-      
+
       <Box component="form" noValidate autoComplete="off" onSubmit={handleSubmit} sx={{ mt: 4 }}>
         <Stack spacing={3}>
-          <TextField 
+          <TextField
             error={submitted && formData.name === ''}
             helperText={submitted && formData.name === '' ? 'Name is required' : ''}
-            label="Name" 
+            label="Name"
             name="name"
             value={formData.name}
             onChange={handleChange}
-            fullWidth 
-            required 
+            fullWidth
+            required
           />
-          <TextField 
-          error={submitted && formData.email === ''}
+          <TextField
+            error={submitted && formData.email === ''}
             helperText={submitted && formData.email === '' ? 'Email is required' : ''}
-            label="Email" 
+            label="Email"
             name="email"
-            type="email" 
+            type="email"
             value={formData.email}
             onChange={handleChange}
-            fullWidth 
-            required 
+            fullWidth
+            required
           />
-          <TextField 
+          <TextField
             error={submitted && formData.message === ''}
             helperText={submitted && formData.message === '' ? 'Message is required' : ''}
-            label="Message" 
+            label="Message"
             name="message"
             value={formData.message}
             onChange={handleChange}
-            multiline 
-            rows={4} 
-            fullWidth 
-            required 
+            multiline
+            rows={4}
+            fullWidth
+            required
           />
           <Button type="submit" variant="contained" size="large" sx={{ py: 1.5 }} disabled={loading}>
             {loading ? <CircularProgress size={24} color="inherit" /> : 'Send Message'}

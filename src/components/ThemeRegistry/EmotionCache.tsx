@@ -1,6 +1,6 @@
 'use client';
 
-import * as React from 'react';
+import React, { useState, ReactNode } from 'react';
 import createCache from '@emotion/cache';
 import { useServerInsertedHTML } from 'next/navigation';
 import { CacheProvider as DefaultCacheProvider } from '@emotion/react';
@@ -12,16 +12,16 @@ export type NextAppDirEmotionCacheProviderProps = {
   /** By default <CacheProvider /> from 'import { CacheProvider } from "@emotion/react"' */
   CacheProvider?: (props: {
     value: EmotionCache;
-    children: React.ReactNode;
+    children: ReactNode;
   }) => React.JSX.Element | null;
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 // This implementation is taken from the MUI Next.js example for App Router
 export default function NextAppDirEmotionCacheProvider(props: NextAppDirEmotionCacheProviderProps) {
   const { options, CacheProvider = DefaultCacheProvider, children } = props;
 
-  const [{ cache, flush }] = React.useState(() => {
+  const [{ cache, flush }] = useState(() => {
     const cache = createCache(options);
     cache.compat = true;
     const prevInsert = cache.insert;
