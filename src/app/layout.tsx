@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import ThemeRegistry from "@/components/ThemeRegistry/ThemeRegistry";
-import Navbar from "@/components/Layout/Navbar";
-import Footer from "@/components/Layout/Footer";
 import Box from "@mui/material/Box";
+import ConditionalLayout from "@/components/Layout/ConditionalLayout";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.spring-k.com'),
@@ -74,11 +73,9 @@ export default function RootLayout({
                 minHeight: '100vh',
               }}
             >
-              <Navbar />
-              <Box component="main" sx={{ flexGrow: 1 }}>
+              <ConditionalLayout>
                 {children}
-              </Box>
-              <Footer />
+              </ConditionalLayout>
             </Box>
           </SplashProvider>
         </ThemeRegistry>
