@@ -21,7 +21,6 @@ const pages = [
   { name: 'Art Work', path: '/' },
   { name: 'Characters', path: '/characters' },
   { name: 'About', path: '/about' },
-  // { name: 'Contact', path: '/contact' },
 ];
 
 export default function Navbar() {

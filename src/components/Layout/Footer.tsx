@@ -20,7 +20,6 @@ function Copyright() {
 
 export default function Footer() {
   return (
-    // <Box component="footer" sx={{ backgroundImage: '#faa9ccff', py: 6, mt: 'auto' }}>
     <Box component="footer" sx={{ backgroundImage: 'url(/background.png)', py: 6, mt: 'auto', backgroundPosition: 'center' }}>
       <Container maxWidth="lg">
         <Typography variant="h6" align="center" gutterBottom>
