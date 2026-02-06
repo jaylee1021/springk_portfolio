@@ -6,7 +6,6 @@ import {
   Stack, Snackbar, CircularProgress, Alert, Divider, Paper, MenuItem 
 } from '@mui/material';
 
-// Define the subjects to keep the code clean
 const SUBJECT_OPTIONS = [
   { value: 'app_issue', label: 'Report an Issue / Bug' },
   { value: 'app_feedback', label: 'App Feedback / Suggestion' },
@@ -21,7 +20,7 @@ export default function Contact() {
   const [formData, setFormData] = useState({ 
     name: '', 
     email: '', 
-    subject: 'app_issue', // Default to an app-related subject for Apple Review
+    subject: 'app_issue',
     message: '' 
   });
 
