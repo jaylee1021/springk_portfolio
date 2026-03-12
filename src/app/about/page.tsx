@@ -1,6 +1,6 @@
 
 import type { Metadata } from 'next';
-import AboutClient from '@/components/About/AboutClient';
+import AboutClient from '@/components/About/AboutMe';
 
 export const metadata: Metadata = {
   title: 'About',
