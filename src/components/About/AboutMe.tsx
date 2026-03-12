@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 
-export default function AboutClient() {
+export default function AboutMe() {
     return (
         <Container maxWidth="lg" sx={{ py: 8 }}>
             <Box sx={{ my: 4 }}>
