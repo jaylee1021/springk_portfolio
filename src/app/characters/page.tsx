@@ -9,11 +9,11 @@ export const metadata: Metadata = {
 };
 
 const characters = [
-    { src: '/characters/1.png', hoverSrc: '/characters/1_1.png', alt: 'Character 1' },
-    { src: '/characters/line.png', alt: 'Line' },
-    { src: '/characters/2.png', alt: 'Character 2' },
-    { src: '/characters/3.png', alt: 'Character 3' },
-    { src: '/characters/4.png', alt: 'Character 4' },
+    { src: '/characters/1.webp', hoverSrc: '/characters/1_1.webp', alt: 'Character 1' },
+    { src: '/characters/line.webp', alt: 'Line' },
+    { src: '/characters/2.webp', alt: 'Character 2' },
+    { src: '/characters/3.webp', alt: 'Character 3' },
+    { src: '/characters/4.webp', alt: 'Character 4' },
 ];
 
 export default function Characters() {
@@ -30,7 +30,7 @@ export default function Characters() {
                 <Box sx={{ mb: 6, display: 'flex', justifyContent: 'center' }}>
                     <Box sx={{ position: 'relative', width: '100%', maxWidth: '1000px', height: '200px' }}>
                         <Image
-                            src="/characters/characters_title.png"
+                            src="/characters/characters_title.webp"
                             alt="Characters"
                             fill
                             style={{ objectFit: 'contain' }}
