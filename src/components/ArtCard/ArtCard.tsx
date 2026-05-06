@@ -17,7 +17,17 @@ interface ArtCardProps {
 export default function ArtCard({ title, image, category, onClick }: ArtCardProps) {
   return (
     <Card sx={{ maxWidth: '100%', height: '100%', borderRadius: 0, boxShadow: 0, bgcolor: 'transparent' }}>
-      <CardActionArea onClick={onClick}>
+      <CardActionArea
+        onClick={onClick}
+        sx={{
+          '& .MuiCardActionArea-focusHighlight': {
+            background: 'transparent',
+          },
+          '&:hover .MuiCardContent-root': {
+            backgroundColor: '#fcd1d8ff',
+          }
+        }}
+      >
         <Box sx={{ position: 'relative', pt: '100%', backgroundColor: 'grey.200' }}>
           <Image
             src={image}
@@ -27,7 +37,7 @@ export default function ArtCard({ title, image, category, onClick }: ArtCardProp
             style={{ objectFit: 'cover' }}
           />
         </Box>
-        <CardContent sx={{ px: 0 }}>
+        <CardContent sx={{ px: 1, transition: 'background-color 0.3s ease' }}>
           <Typography gutterBottom variant="h6" component="div">
             {title}
           </Typography>
