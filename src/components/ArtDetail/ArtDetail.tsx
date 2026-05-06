@@ -14,11 +14,13 @@ interface ArtDetailProps {
     category: string;
     image: string;
     size?: string;
+    description_kr: string;
+    description_en: string;
     prevId?: number;
     nextId?: number;
 }
 
-export default function ArtDetail({ title, category, image, size, prevId, nextId }: ArtDetailProps) {
+export default function ArtDetail({ title, category, image, size, description_kr, description_en, prevId, nextId }: ArtDetailProps) {
     return (
         <Container maxWidth="xl" sx={{ py: 8 }}>
             <Box sx={{ mb: 4 }}>
@@ -110,7 +112,10 @@ export default function ArtDetail({ title, category, image, size, prevId, nextId
                     <Box sx={{ mt: 4, pt: 4, borderTop: '1px solid', borderColor: 'divider' }}>
                         {/* Future metadata can go here like year, dimensions, etc if available in data */}
                         <Typography variant="body1" color="text.secondary">
-                            Spring days Original Artwork
+                            {description_kr}
+                            <br />
+                            <br />
+                            {description_en}
                         </Typography>
                     </Box>
                 </Box>
