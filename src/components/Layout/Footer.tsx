@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import Image from 'next/image';
 
 function Copyright() {
   return (
@@ -22,11 +23,11 @@ export default function Footer() {
   return (
     <Box component="footer" sx={{ backgroundImage: 'url(/background.png)', py: 6, mt: 'auto', backgroundPosition: 'center' }}>
       <Container maxWidth="lg">
-        <Typography variant="h6" align="center" gutterBottom>
-          Spring days
-        </Typography>
+        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <Image src="/spring_days_title.png" alt="Spring days" width={301} height={50} />
+        </Box>
         <Typography
-          variant="subtitle1" 
+          variant="subtitle1"
           align="center"
           color="text.secondary"
           component="p"
