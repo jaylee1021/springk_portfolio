@@ -23,20 +23,45 @@ interface ArtDetailProps {
 export default function ArtDetail({ title, category, image, size, description_kr, description_en, prevId, nextId }: ArtDetailProps) {
     return (
         <Container maxWidth="xl" sx={{ py: 8 }}>
-            <Box sx={{ mb: 4 }}>
-                <Button
-                    component={Link}
-                    href="/"
-                    startIcon={<ArrowBackIcon />}
-                    sx={{
-                        color: 'text.primary',
-                        '&:hover': {
-                            backgroundColor: 'rgba(0,0,0,0.05)'
-                        }
-                    }}
-                >
-                    Back to Art Work
-                </Button>
+            <Box sx={{ display: 'flex', width: '100%', justifyContent: 'space-between', mb: 4 }}>
+                <Box>
+                    <Button
+                        component={Link}
+                        href="/"
+                        startIcon={<ArrowBackIcon />}
+                        sx={{
+                            color: 'text.primary',
+                            '&:hover': {
+                                backgroundColor: 'rgba(0,0,0,0.05)'
+                            }
+                        }}
+                    >
+                        Back to Art Work
+                    </Button>
+                </Box>
+                <Box sx={{ display: 'flex', justifyContent: 'right' }}>
+                    {prevId ? (
+                        <Button
+                            component={Link}
+                            href={`/artwork/${prevId}`}
+                            startIcon={<ArrowBackIcon />}
+                            color="inherit"
+                        >
+                            Previous
+                        </Button>
+                    ) : <Box />}
+
+                    {nextId && (
+                        <Button
+                            component={Link}
+                            href={`/artwork/${nextId}`}
+                            endIcon={<ArrowForwardIcon />}
+                            color="inherit"
+                        >
+                            Next
+                        </Button>
+                    )}
+                </Box>
             </Box>
 
             <Box sx={{
@@ -67,30 +92,6 @@ export default function ArtDetail({ title, category, image, size, description_kr
                             }}
                             priority
                         />
-                    </Box>
-
-                    <Box sx={{ display: 'flex', width: '100%', justifyContent: 'space-between' }}>
-                        {prevId ? (
-                            <Button
-                                component={Link}
-                                href={`/artwork/${prevId}`}
-                                startIcon={<ArrowBackIcon />}
-                                color="inherit"
-                            >
-                                Previous
-                            </Button>
-                        ) : <Box />}
-
-                        {nextId && (
-                            <Button
-                                component={Link}
-                                href={`/artwork/${nextId}`}
-                                endIcon={<ArrowForwardIcon />}
-                                color="inherit"
-                            >
-                                Next
-                            </Button>
-                        )}
                     </Box>
                 </Box>
 
