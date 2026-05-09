@@ -108,10 +108,15 @@ export default function ArtDetail({ title, category, image, size, description_kr
                             {size}
                         </Typography>
                     )}
-
                     <Box sx={{ mt: 4, pt: 4, borderTop: '1px solid', borderColor: 'divider' }}>
-                        {/* Future metadata can go here like year, dimensions, etc if available in data */}
-                        <Typography variant="body1" color="text.secondary">
+                        <Typography
+                            variant="body1"
+                            color="text.secondary"
+                            sx={{
+                                textAlign: 'justify',
+                                textJustify: 'inter-word'
+                            }}
+                        >
                             {description_kr}
                             <br />
                             <br />
