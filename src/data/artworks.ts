@@ -40,7 +40,7 @@ export const artworks = [
     description_en: 'While visiting the children\'s hospital, there were many moments when the tiny, fragile children felt endlessly delicate. Seeing them with nasal tubes attached to their small bodies, I would think: How did they endure that hardship? They must have suffered a lot, it must have been tough, I found that so difficult too. The indescribable pain, how painful it must be to endure through it. How strong are they becoming, how quickly are they growing up? I wanted to put the children in the position of strong people. Not a weak body undergoing surgery, but someone with the power to perform surgery. Not a small and delicate face, but a tough-looking face... Thus, I came to paint the child-doctor in the middle of surgery.'
   },
   {
-    id: 9, title: 'Greeny PePeRo', category: 'Acrylic on Canvas', size: '100F 162.2 X 130.3 cm (64 x 51 inch)', image: '/assets/09_heaing snack_2009_acrylic on canvas_162.2x130.3(cm).JPG',
+    id: 9, title: 'Greeny PePeRo', category: 'Acrylic on Canvas', size: '50F 91 X 116.8 cm (36 x 46 inch)', image: '/assets/09_heaing snack_2009_acrylic on canvas_162.2x130.3(cm).JPG',
     description_kr: '초코렛을 상당히 좋아하던 나는 최애 과자중에 빼빼로가 있었다. 그 빼빼로에 초코부분을 아리조나맛으로 바꾸어 표현한 달콤한 추억. 일반빼빼로, 누드빼빼로, 아몬드빼빼로중에 아몬드 빼빼로를 모양으로 오마쥬하여 작은이미지들을 덧붙였다.',
     description_en: 'As someone who really loved chocolate, Pepero was one of my favorite snacks. The sweet memory expressed by changing the chocolate part of that Pepero into an Arizona flavor. Among regular Pepero, nude Pepero, and almond Pepero, I paid homage to the almond Pepero shape and added small images.'
   },
