@@ -1,7 +1,7 @@
 export const artworks = [
   {
     id: 1, title: 'First Story', category: 'Acrylic on Canvas', size: '50F 116.8 X 91.0 cm (46 x 36 inch)', image: '/assets/01_story_2009_acrylic on canvas_116.8x91.0(cm).JPG',
-    description_kr: '4번째 개복수술을 오더받고 대학생때 다시 가게된 어린이병원의 입원병동, 들어서는 순간 어릴적 놀던 동네 놀이터 온 것 같은 느낌을 받았다. 오랜만이라고 대학생이된 나를 놀라며 반가워해주는 나를 기억해주는 간호사선생님들, 낯설지 않은 익숙함과 추억같은게 떠오르는 느낌, 왠지 이상하지만 새로운 느낌이었다. 서울대학교병원에는 1인실, 2인실, 6-7인실이 있었는데 잠귀가 예민했던 나는 중학생때 아기들 울음소리에 잠들기가 힘들어 2인실을 쓰다가 아픈데 심심하기까지한 적막한2인실보다는 북적북적한 다인실을 더 좋아하게 됐다. 병실침대 하나하나, 한명한명 담긴 이야기, 한 아이와 그 가족, 그들의 시간들 - 부모님들이 서로의 얘기를 하고 들어주는 대화, 서로를 위로하고 다독이는 시간이 되는 어린이병원 이야기.',
+    description_kr: '4번째 개복수술을 오더받고 대학생때 다시 가게된 어린이병원의 입원병동, 들어서는 순간 어릴적 놀던 동네 놀이터 온 것 같은 느낌을 받았다. 오랜만이라고 대학생이된 나를 놀라며 반가워해주는 나를 기억해주는 간호사선생님들, 낯설지 않은 익숙함과 추억같은게 떠오르는 느낌, 왠지 이상하지만 새로운 느낌이었다. 서울대학교병원에는 1인실, 2인실, 6-7인실이 있었는데 잠귀가 예민했던 중학생때는 아기들 울음소리에 잠들기가 힘들어 2인실을 쓰다가 아픈데 심심하기까지한 적막한2인실보다는 북적북적한 다인실을 더 좋아하게 됐다. 병실침대 하나하나, 한명한명 담긴 이야기, 한 아이와 그 가족, 그들의 시간들 - 부모님들이 서로의 얘기를 하고 들어주는 대화, 서로를 위로하고 다독이는 시간이 되는 어린이병원 이야기.',
     description_en: 'When I was admitted to the children\'s hospital ward again as a college student after receiving an order for my 4th laparotomy, the moment I stepped in, I felt like I had come to the neighborhood playground where I used to play as a child. The nurses who remembered me and warmly welcomed me, surprised to see me as a college student after such a long time, the familiar feeling and the memories coming back... it felt somewhat strange but also new. At Seoul National University Hospital, there were single rooms, double rooms, and 6-7 bed rooms. Since I was a light sleeper, I found it hard to fall asleep to the sound of babies crying when I was in middle school, so I used a double room. But eventually, I grew to prefer the bustling multi-bed rooms over the quiet, boring, and painful double rooms. The stories held in each hospital bed, each person, a child and their family, their time together—the children\'s hospital room where parents talk and listen to each other, a time of mutual comfort and soothing.'
   },
   {
@@ -31,8 +31,8 @@ export const artworks = [
   },
   {
     id: 7, title: 'Season Donut Box', category: 'Acrylic on Canvas', size: '100F 162.2 X 130.3 cm (64 x 51 inch)', image: '/assets/07_Room in box_2009_acrylic on canvas_162.2x130.3(cm).JPG',
-    description_kr: '분홍색을 좋아하는 나는 귀여운 곰돌이를 좋아하고, 달콤한 커피, 도너츠와 아메리카노를 좋아했다. 뉴욕여행에서 감동적이었던 미술관과 갤러리여정, 자연과 도시가 하나된 센트럴파크에서 얻은 낯선곳의 새로운 편안함과 쉼들은 신기했다. 그리고 추억이되어 고스란히 도넛박스에 담겼다. 나의 취향, 즐거웠던 공간 그것은 또하나의 새로운 시즌의 그림.',
-    description_en: 'I, who like the color pink, loved cute teddy bears, sweet coffee, donuts, and Americano. The moving journey through art museums and galleries during my trip to New York, the new comfort and rest I found in an unfamiliar place where nature and the city unite in Central Park—these became memories entirely contained within a donut box. My tastes, the spaces I enjoyed... these became another painting of a new season.'
+    description_kr: '분홍색을 좋아하는 나는 귀여운 곰돌이를 좋아하고, 달콤한 커피, 도너츠와 아메리카노를 좋아했다. 뉴욕여행에서 감동적이었던 미술관과 갤러리여정, 자연과 도시가 하나된 센트럴파크에서 얻은 낯선곳의 새로운 편안함과 쉼들은 신기했다. 그리고 추억이되어 고스란히 도넛박스에 담겼다. 취향, 즐거웠던 공간 그것은 또하나의 새로운 시즌의 그림.',
+    description_en: 'I, who like the color pink, loved cute teddy bears, sweet coffee, donuts, and Americano. The moving journey through art museums and galleries during my trip to New York, the new comfort and rest I found in an unfamiliar place where nature and the city unite in Central Park—these became memories entirely contained within a donut box. Tastes, the spaces I enjoyed... these became another painting of a new season.'
   },
   {
     id: 8, title: 'Surgery', category: 'Acrylic on Canvas', size: '100F 162.2 X 130.3 cm (64 x 51 inch)', image: '/assets/08_on Surgery_2009_acrylic on canvas_162.2x130.3(cm).JPG',
@@ -51,7 +51,7 @@ export const artworks = [
   },
   {
     id: 11, title: 'Healing Corns', category: 'Acrylic on Canvas', size: '100F 162.2 X 130.3 cm (64 x 51 inch)', image: '/assets/011_healing corn_2009_acrylic on canvas_162.2x130.3(cm).JPG',
-    description_kr: '모든게 신기하고 모든게 즐거웠던 여름, 그 해 여름엔 그곳에서 나는 많이 회복했고 쉼을 얻었고 다시 그림을 그려낼 힘을 얻었다. 뜨겁게 기도하며 뜨겁게 즐거웠던 그 해 여름, 그날의 우리들.',
+    description_kr: '모든게 신기하고 모든게 즐거웠던 여름, 그 해 여름엔 그곳에서 많이 회복했고 쉼을 얻었고 다시 그림을 그려낼 힘을 얻었다. 뜨겁게 기도하며 뜨겁게 즐거웠던 그 해 여름, 그날의 우리들.',
     description_en: 'The summer when everything was fascinating and joyful. That summer, I recovered a lot there, found rest, and gained the strength to draw again. The summer when we prayed fervently and enjoyed ourselves passionately, us from those days.'
   },
   {
