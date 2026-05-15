@@ -10,11 +10,12 @@ import { CardActionArea } from '@mui/material';
 interface ArtCardProps {
   title: string;
   image: string;
+  title_image: string;
   category: string;
   onClick?: () => void;
 }
 
-export default function ArtCard({ title, image, category, onClick }: ArtCardProps) {
+export default function ArtCard({ title, image, title_image, category, onClick }: ArtCardProps) {
   return (
     <Card sx={{ maxWidth: '100%', height: '100%', borderRadius: 0, boxShadow: 0, bgcolor: 'transparent' }}>
       <CardActionArea
@@ -39,6 +40,9 @@ export default function ArtCard({ title, image, category, onClick }: ArtCardProp
         </Box>
         <CardContent sx={{ px: 1, transition: 'background-color 0.3s ease' }}>
           <Typography gutterBottom variant="h6" component="div">
+            <Box component="span" sx={{ display: 'inline-flex', position: 'relative', top: '8px' }}>
+              <Image src={title_image} alt={title} width={30} height={30} />
+            </Box>
             {title}
           </Typography>
           <Typography variant="body2" color="text.secondary">

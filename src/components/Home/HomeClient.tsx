@@ -36,6 +36,7 @@ export default function HomeClient() {
                                 title={art.title}
                                 category={art.category}
                                 image={art.image}
+                                title_image={art.title_image}
                             />
                         </Link>
                     </Grid>
