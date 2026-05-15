@@ -30,7 +30,7 @@ export const artworks = [
     id: 6, title: 'Spring Stare', category: 'Acrylic on Canvas', size: '100F 162.2 X 130.3 cm (64 x 51 inch)', image: '/assets/06_Room2_2009_acrylic on canvas_162.2x130.3(cm).JPG',
     description_kr_one: '소망 그리고 바라봄',
     description_kr_two: '몸이 아무것도 할 수 없이 나약해져 있을 때에도 누워있는 것 그 것이 최대한의 에너지 일때도 볼 수 있었고, 바랄 수 있었다. 끊임없이 바라본 건 이 땅 저 너머의 - 자유로운 그곳, 낮은 담, 뚫려있는 가까운 그 곳. 가까이 있는 그 것.',
-    description_en_one: 'Hope and staring',
+    description_en_one: 'Hope and Staring.',
     description_en_two: 'Even when my body was so weak that it could do nothing, even when lying down required maximum energy, I could see, and I could hope. What I constantly stared at was beyond this land—that free place, the low wall, the open, close place. That thing nearby.',
   },
   {
