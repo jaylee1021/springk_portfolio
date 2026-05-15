@@ -87,6 +87,7 @@ export default async function ArtworkPage({
             category={artwork.category}
             image={artwork.image}
             size={artwork.size}
+            title_image={artwork.title_image}
             description_kr_one={artwork.description_kr_one}
             description_kr_two={artwork.description_kr_two}
             description_en_one={artwork.description_en_one}

@@ -14,6 +14,7 @@ interface ArtDetailProps {
     category: string;
     image: string;
     size?: string;
+    title_image?: string;
     description_kr_one: string;
     description_kr_two?: string;
     description_en_one: string;
@@ -27,6 +28,7 @@ export default function ArtDetail({
     category,
     image,
     size,
+    title_image,
     description_kr_one,
     description_kr_two,
     description_en_one,
@@ -108,7 +110,12 @@ export default function ArtDetail({
                 </Box>
 
                 <Box sx={{ flex: '1 1 40%', width: '100%' }}>
-                    <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 'bold' }}>
+                    <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 'bold', display: 'flex', alignItems: 'center' }}>
+                        {title_image && (
+                            <Box component="span" sx={{ display: 'inline-flex', marginLeft: '-10px', position: 'relative', top: '0px' }}>
+                                <Image src={title_image} alt={title} width={60} height={60} />
+                            </Box>
+                        )}
                         {title}
                     </Typography>
 
@@ -134,13 +141,11 @@ export default function ArtDetail({
                             }}
                         >
                             {description_kr_one}
-                            {description_kr_two && <><br /><br /></>}
-                            {description_kr_two}
+                            {description_kr_two && <><br /><br />{description_kr_two}</>}
                             <br />
                             <br />
                             {description_en_one}
-                            {description_en_two && <><br /><br /></>}
-                            {description_en_two}
+                            {description_en_two && <><br /><br />{description_en_two}</>}
                         </Typography>
                     </Box>
                 </Box>
