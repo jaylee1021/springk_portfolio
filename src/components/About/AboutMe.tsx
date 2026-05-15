@@ -85,7 +85,7 @@ export default function AboutMe() {
                 <Grid container spacing={4}>
                     <Grid size={{ xs: 12, md: 6 }}>
                         <Typography variant="body1" sx={{ mb: 1 }}>
-                            그림을 본 나를 아는 사람들은 그림이 꼭 너 같다고 한다.
+                            나를 아는 사람들은 그림이 꼭 너 같다고 한다.
                         </Typography>
                         <Typography variant="body1" sx={{ mb: 1 }}>
                             병실의 공간을 재해석해서 그린 그림을 나중에야 본 엄마는 한편으로는 마음 아파했다.
