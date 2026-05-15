@@ -31,7 +31,7 @@ export const artworks = [
   },
   {
     id: 7, title: 'Season Donut Box', category: 'Acrylic on Canvas', size: '100F 162.2 X 130.3 cm (64 x 51 inch)', image: '/assets/07_Room in box_2009_acrylic on canvas_162.2x130.3(cm).JPG',
-    description_kr: '분홍색을 좋아하는 나는 귀여운 곰돌이를 좋아하고, 달콤한 커피, 도너츠와 아메리카노를 좋아했다. 뉴욕여행에서 감동적이었던 미술관과 갤러리여정, 자연과 도시가 하나된 센트럴파크에서 얻은 낯선곳의 새로운 편안함과 쉼들은 신기했다. 그리고 추억이되어 고스란히 도넛박스에 담겼다. 나의 취향, 즐거웠던 공간 그것은 또하나의 새로운 시즌의 그림이 되었다.',
+    description_kr: '분홍색을 좋아하는 나는 귀여운 곰돌이를 좋아하고, 달콤한 커피, 도너츠와 아메리카노를 좋아했다. 뉴욕여행에서 감동적이었던 미술관과 갤러리여정, 자연과 도시가 하나된 센트럴파크에서 얻은 낯선곳의 새로운 편안함과 쉼들은 신기했다. 그리고 추억이되어 고스란히 도넛박스에 담겼다. 나의 취향, 즐거웠던 공간 그것은 또하나의 새로운 시즌의 그림.',
     description_en: 'I, who like the color pink, loved cute teddy bears, sweet coffee, donuts, and Americano. The moving journey through art museums and galleries during my trip to New York, the new comfort and rest I found in an unfamiliar place where nature and the city unite in Central Park—these became memories entirely contained within a donut box. My tastes, the spaces I enjoyed... these became another painting of a new season.'
   },
   {
