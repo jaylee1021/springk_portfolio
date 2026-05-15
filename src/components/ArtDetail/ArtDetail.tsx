@@ -14,13 +14,25 @@ interface ArtDetailProps {
     category: string;
     image: string;
     size?: string;
-    description_kr: string;
-    description_en: string;
+    description_kr_one: string;
+    description_kr_two?: string;
+    description_en_one: string;
+    description_en_two?: string;
     prevId?: number;
     nextId?: number;
 }
 
-export default function ArtDetail({ title, category, image, size, description_kr, description_en, prevId, nextId }: ArtDetailProps) {
+export default function ArtDetail({
+    title,
+    category,
+    image,
+    size,
+    description_kr_one,
+    description_kr_two,
+    description_en_one,
+    description_en_two,
+    prevId,
+    nextId }: ArtDetailProps) {
     return (
         <Container maxWidth="xl" sx={{ py: 8 }}>
             <Box sx={{ display: 'flex', width: '100%', justifyContent: 'space-between', mb: 4 }}>
@@ -118,10 +130,14 @@ export default function ArtDetail({ title, category, image, size, description_kr
                                 textJustify: 'inter-word'
                             }}
                         >
-                            {description_kr}
+                            {description_kr_one}
+                            {description_kr_two && <><br /><br /></>}
+                            {description_kr_two}
                             <br />
                             <br />
-                            {description_en}
+                            {description_en_one}
+                            {description_en_two && <><br /><br /></>}
+                            {description_en_two}
                         </Typography>
                     </Box>
                 </Box>
