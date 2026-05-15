@@ -14,7 +14,7 @@ interface ArtDetailProps {
     category: string;
     image: string;
     size?: string;
-    title_image?: string;
+    title_image: string;
     description_kr_one: string;
     description_kr_two?: string;
     description_en_one: string;
