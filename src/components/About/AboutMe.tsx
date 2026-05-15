@@ -11,7 +11,7 @@ export default function AboutMe() {
             <Box sx={{ my: 4 }}>
                 {/* Spring vibes Section */}
                 <Typography variant="h6" sx={{ color: 'text.secondary', mb: 3, mt: 4 }}>
-                    / Spring vibes ✿ ♡݁｡ᡘ֯ .ܸ ݂ .ܸ ྀི১݂ ✿
+                    Spring vibes ✿ ♡݁｡ᡘ֯ .ܸ ݂ .ܸ ྀི১݂ ✿
                 </Typography>
                 <Grid container spacing={4}>
                     <Grid size={{ xs: 12, md: 6 }}>
@@ -80,7 +80,7 @@ export default function AboutMe() {
 
                 {/* Saebom kim Section */}
                 <Typography variant="h6" sx={{ color: 'text.secondary', mb: 3, mt: 6 }}>
-                    / Saebom kim ૮꒰ྀི ˶ᵔ ᵕ ᵔ˶ ꒱ྀིა
+                    Saebom kim ૮꒰ྀི ˶ᵔ ᵕ ᵔ˶ ꒱ྀིა
                 </Typography>
                 <Grid container spacing={4}>
                     <Grid size={{ xs: 12, md: 6 }}>
