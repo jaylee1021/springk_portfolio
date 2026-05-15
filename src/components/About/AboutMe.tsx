@@ -16,7 +16,7 @@ export default function AboutMe() {
                 <Grid container spacing={4}>
                     <Grid size={{ xs: 12, md: 6 }}>
                         <Typography variant="body1" sx={{ mb: 2 }}>
-                            진솔함. 진정성있는 그런 이야기를 하고싶었다.
+                            진솔함. 진정성있는 그런 이야기.
                         </Typography>
                         <Typography variant="body1">
                             느낌 - 어떠한 것을 바라본 것 / 감정, 그것으로 부터 시작 된 생각. 같은 공간에서도 서로가 조금씩은 다를 수 밖에 없는 그런 내면의 느낌
@@ -24,7 +24,7 @@ export default function AboutMe() {
                     </Grid>
                     <Grid size={{ xs: 12, md: 6 }}>
                         <Typography variant="body1" sx={{ mb: 2 }}>
-                            Sincerity. I wanted to share a story with authenticity.
+                            Sincerity. A story with authenticity.
                         </Typography>
                         <Typography variant="body1">
                             Feeling — the gaze / emotion, and the thoughts that begin from it. The inner feeling that inevitably varies slightly for everyone, even in the same space.
@@ -88,7 +88,7 @@ export default function AboutMe() {
                             나를 아는 사람들은 그림이 꼭 너 같다고 한다.
                         </Typography>
                         <Typography variant="body1" sx={{ mb: 1 }}>
-                            병실의 공간을 재해석해서 그린 그림을 나중에야 본 엄마는 한편으로는 마음 아파했다.
+                            병원을 재해석해서 그린 그림을 나중에야 본 엄마는 한편으로는 마음 아파했다.
                         </Typography>
                         <Typography variant="body1" sx={{ mb: 1 }}>
                             내용을 들여다보기전 처음 그림을 본 사람들은 밝은색감에 - 밝은-화사한 느낌을 받는다.
@@ -111,7 +111,7 @@ export default function AboutMe() {
                             People who know me say my paintings look just like me.
                         </Typography>
                         <Typography variant="body1" sx={{ mb: 1 }}>
-                            My mother, seeing my paintings reinterpreting hospital rooms later, felt heartbroken.
+                            My mother, seeing my paintings reinterpreting hospital later, felt heartbroken.
                         </Typography>
                         <Typography variant="body1" sx={{ mb: 1 }}>
                             But viewing them without context, people get a bright, radiant feeling from the colors.
