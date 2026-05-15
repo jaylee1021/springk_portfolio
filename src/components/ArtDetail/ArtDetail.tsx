@@ -112,20 +112,23 @@ export default function ArtDetail({
                         {title}
                     </Typography>
 
-                    <Typography variant="h5" color="text.secondary" gutterBottom sx={{ mb: 2 }}>
-                        {category}
+                    <Typography variant="h1"
+                        color="text.secondary"
+                        gutterBottom
+                        sx={{
+                            fontSize: '0.8rem',
+                            mb: 2
+                        }}>
+                        {category}<br />
+                        {size}
                     </Typography>
 
-                    {size && (
-                        <Typography variant="h6" color="text.secondary" gutterBottom sx={{ mb: 4, fontWeight: 'normal' }}>
-                            {size}
-                        </Typography>
-                    )}
                     <Box sx={{ mt: 4, pt: 4, borderTop: '1px solid', borderColor: 'divider' }}>
                         <Typography
                             variant="body1"
                             color="text.secondary"
                             sx={{
+                                fontSize: '0.85rem',
                                 textAlign: 'justify',
                                 textJustify: 'inter-word'
                             }}
