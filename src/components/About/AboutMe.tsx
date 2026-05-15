@@ -5,6 +5,12 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 
+const EnTypography = ({ children, sx, ...props }: React.ComponentProps<typeof Typography>) => (
+    <Typography sx={{ fontSize: '0.9rem', ...sx }} {...props}>
+        {children}
+    </Typography>
+);
+
 export default function AboutMe() {
     return (
         <Box
@@ -34,15 +40,15 @@ export default function AboutMe() {
                             </Typography>
                         </Grid>
                         <Grid size={{ xs: 12, md: 6 }}>
-                            <Typography variant="body1">
+                            <EnTypography variant="body1">
                                 Sincerity: my authentic story.
-                            </Typography>
-                            <Typography variant="body1">
+                            </EnTypography>
+                            <EnTypography variant="body1">
                                 Feeling: the gaze upon something, the resulting emotion, and the thoughts that begin from it.
-                            </Typography>
-                            <Typography variant="body1">
+                            </EnTypography>
+                            <EnTypography variant="body1">
                                 The inner, subjective, and conceptual aspects that inevitably vary slightly for everyone, even within the same space.
-                            </Typography>
+                            </EnTypography>
                         </Grid>
                     </Grid>
 
@@ -60,12 +66,12 @@ export default function AboutMe() {
                             </Typography>
                         </Grid>
                         <Grid size={{ xs: 12, md: 6 }}>
-                            <Typography variant="body1" sx={{ mb: 3 }}>
+                            <EnTypography variant="body1" sx={{ mb: 3 }}>
                                 Recovery and healing are the stories I have continuously told—and will continue to tell. Art holds various meanings for many people. To me, I hope art moves emotions and embraces someone. It depicts the inner child and current feelings through past experiences, creating a new space. Perhaps the act of proceeding with work motivated by a purpose is a meaningful artistic activity in itself. When I created an installation art using syringes, I explained that although they were objects that had once caused me pain, I was transforming them into objects for creating art, giving them a new meaning. Although the reason for using them might be slightly different, just as Joseph Kosuth used felt from his memories for installation work, I attempted to imbue the meaning of recovery by bringing that material into my work.
-                            </Typography>
-                            <Typography variant="body1">
+                            </EnTypography>
+                            <EnTypography variant="body1">
                                 Painting hospitals was similar. The process of decorating and depicting the hospital space was freedom from pain, a recovery that overcame it, and the resulting healing. The process of constructing the space, dividing the planes, and filling them with bright and diverse colors—like fitting together pieces of colored paper—was also an expression of filling each of my memories with new, bright meanings.
-                            </Typography>
+                            </EnTypography>
                         </Grid>
                     </Grid>
 
@@ -80,9 +86,9 @@ export default function AboutMe() {
                             </Typography>
                         </Grid>
                         <Grid size={{ xs: 12, md: 6 }}>
-                            <Typography variant="body1">
+                            <EnTypography variant="body1">
                                 Next, I began to capture images of healing and recovery. Ice cream—like those sweet and affectionate moments when offering sweet snacks to crying children makes them feel better and stop their tears. So, by placing these inside donut boxes, coffee to-go carriers, and on top of whipped cream, I hoped they could become a momentary rest, brightening low spirits. Drawing things that can be passed from hand to hand—like a reaching hand trying to convey my heart and offer comfort. ♥
-                            </Typography>
+                            </EnTypography>
                         </Grid>
                     </Grid>
 
@@ -115,27 +121,27 @@ export default function AboutMe() {
                             </Typography>
                         </Grid>
                         <Grid size={{ xs: 12, md: 6 }}>
-                            <Typography variant="body1" sx={{ mb: 1 }}>
+                            <EnTypography variant="body1" sx={{ mb: 1 }}>
                                 People who know me say my paintings look just like me. Hearing that the paintings and characters I create resemble me feels good, as if my true story has been conveyed. Just as a life without artificiality or pretense is natural, these are paintings that capture me just as I am.
-                            </Typography>
-                            <Typography variant="body1" sx={{ mb: 1 }}>
+                            </EnTypography>
+                            <EnTypography variant="body1" sx={{ mb: 1 }}>
                                 My mother, upon later seeing the paintings that reinterpreted the hospital room, felt heartbroken on one hand. Now that I have become a mother, I understand the heart behind those words and feel rather sorry. People who see the paintings for the first time without knowing the context get a bright, radiant feeling from the vibrant colors. &quot;Is it a hotel?&quot; they think, or &quot;Is it a room we came to hang out in?&quot; Finding that amusing, I would take it upon myself to ask first: &quot;What does this look like to you? What do you think I painted?&quot;
-                            </Typography>
-                            <Typography variant="body1" sx={{ mb: 1 }}>
+                            </EnTypography>
+                            <EnTypography variant="body1" sx={{ mb: 1 }}>
                                 Thinking back, I don&apos;t think I was hiding. And just because I was sick or struggling didn&apos;t mean I wanted to stop.
-                            </Typography>
-                            <Typography variant="body1" sx={{ mb: 1 }}>
+                            </EnTypography>
+                            <EnTypography variant="body1" sx={{ mb: 1 }}>
                                 Rather than revealing myself, these are works where I melted and seeped in—paintings I drew, paintings that were drawn.
-                            </Typography>
-                            <Typography variant="body1" sx={{ mb: 1 }}>
+                            </EnTypography>
+                            <EnTypography variant="body1" sx={{ mb: 1 }}>
                                 Feeling the space in front of the painting and receiving the atmosphere it holds—
-                            </Typography>
-                            <Typography variant="body1" sx={{ mb: 1 }}>
+                            </EnTypography>
+                            <EnTypography variant="body1" sx={{ mb: 1 }}>
                                 This is the unique painterly quality that painting, which materializes color, can possess,
-                            </Typography>
-                            <Typography variant="body1">
+                            </EnTypography>
+                            <EnTypography variant="body1">
                                 and the attraction that allows one to enter into the painting and stay a while.
-                            </Typography>
+                            </EnTypography>
                         </Grid>
                     </Grid>
                 </Box>
