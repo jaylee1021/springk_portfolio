@@ -84,6 +84,8 @@ export default async function ArtworkPage({
     return (
         <ArtDetail
             title={artwork.title}
+            title2={artwork.title2}
+            title3={artwork.title3}
             category={artwork.category}
             image={artwork.image}
             size={artwork.size}

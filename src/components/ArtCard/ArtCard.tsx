@@ -9,13 +9,15 @@ import { CardActionArea } from '@mui/material';
 
 interface ArtCardProps {
   title: string;
+  title2?: string;
+  title3?: string;
   image: string;
   title_image: string;
   category: string;
   onClick?: () => void;
 }
 
-export default function ArtCard({ title, image, title_image, category, onClick }: ArtCardProps) {
+export default function ArtCard({ title, title2, title3, image, title_image, category, onClick }: ArtCardProps) {
   return (
     <Card sx={{ maxWidth: '100%', height: '100%', borderRadius: 0, boxShadow: 0, bgcolor: 'transparent' }}>
       <CardActionArea
@@ -44,6 +46,14 @@ export default function ArtCard({ title, image, title_image, category, onClick }
               <Image src={title_image} alt={title} width={30} height={30} />
             </Box>
             {title}
+            {title2 &&
+              <>
+                <Box component="span" sx={{ marginLeft: '-5px', display: 'inline-flex', position: 'relative', top: '5px' }}>
+                  <Image src={title2} alt={title} width={20} height={20} />
+                </Box>
+                {title3 && title3}
+              </>
+            }
           </Typography>
           <Typography variant="body2" color="text.secondary">
             {category}

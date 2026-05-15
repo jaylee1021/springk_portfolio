@@ -34,6 +34,8 @@ export default function HomeClient() {
                         <Link href={`/artwork/${art.id}`} style={{ textDecoration: 'none' }}>
                             <ArtCard
                                 title={art.title}
+                                title2={art.title2}
+                                title3={art.title3}
                                 category={art.category}
                                 image={art.image}
                                 title_image={art.title_image}

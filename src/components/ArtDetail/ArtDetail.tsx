@@ -11,6 +11,8 @@ import Link from 'next/link';
 
 interface ArtDetailProps {
     title: string;
+    title2?: string;
+    title3?: string;
     category: string;
     image: string;
     size?: string;
@@ -25,6 +27,8 @@ interface ArtDetailProps {
 
 export default function ArtDetail({
     title,
+    title2,
+    title3,
     category,
     image,
     size,
@@ -111,12 +115,18 @@ export default function ArtDetail({
 
                 <Box sx={{ flex: '1 1 40%', width: '100%' }}>
                     <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 'bold', display: 'flex', alignItems: 'center' }}>
-                        {title_image && (
-                            <Box component="span" sx={{ display: 'inline-flex', marginLeft: '-10px', position: 'relative', top: '0px' }}>
-                                <Image src={title_image} alt={title} width={60} height={60} />
-                            </Box>
-                        )}
+                        <Box component="span" sx={{ display: 'inline-flex', marginLeft: '-10px', position: 'relative', top: '0px' }}>
+                            <Image src={title_image} alt={title} width={60} height={60} />
+                        </Box>
                         {title}
+                        {title2 &&
+                            <>
+                                <Box component="span" sx={{ display: 'inline-flex', position: 'relative', top: '0px' }}>
+                                    <Image src={title2} alt={title} width={30} height={30} />
+                                </Box>
+                                {title3 && title3}
+                            </>
+                        }
                     </Typography>
 
                     <Typography variant="h1"
