@@ -41,7 +41,7 @@ export default function ArtCard({ title, title2, title3, image, title_image, cat
           />
         </Box>
         <CardContent sx={{ px: 1, transition: 'background-color 0.3s ease' }}>
-          <Typography gutterBottom variant="h6" component="div">
+          <Typography variant="h6" component="div" sx={{ mb: 0 }}>
             <Box component="span" sx={{ display: 'inline-flex', position: 'relative', top: '8px' }}>
               <Image src={title_image} alt={title} width={30} height={30} />
             </Box>
@@ -55,7 +55,7 @@ export default function ArtCard({ title, title2, title3, image, title_image, cat
               </>
             }
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" color="text.secondary" sx={{ marginLeft: '31px' }}>
             {category}
           </Typography>
         </CardContent>
