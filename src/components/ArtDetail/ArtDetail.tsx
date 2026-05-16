@@ -85,7 +85,7 @@ export default function ArtDetail({
             <Box sx={{
                 display: 'flex',
                 flexDirection: { xs: 'column', md: 'row' },
-                gap: 6,
+                gap: { xs: 2, md: 6 },
                 alignItems: 'flex-start'
             }}>
                 <Box sx={{ flex: '1 1 60%', width: '100%' }}>
@@ -93,8 +93,7 @@ export default function ArtDetail({
                         position: 'relative',
                         borderRadius: 2,
                         overflow: 'hidden',
-                        backgroundColor: '#f5f5f5',
-                        mb: 4
+                        backgroundColor: '#f5f5f5'
                     }}>
                         <Image
                             src={image}
@@ -114,15 +113,15 @@ export default function ArtDetail({
                 </Box>
 
                 <Box sx={{ flex: '1 1 40%', width: '100%' }}>
-                    <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 'bold', display: 'flex', alignItems: 'center' }}>
-                        <Box component="span" sx={{ display: 'inline-flex', marginLeft: '-10px', position: 'relative', top: '0px' }}>
-                            <Image src={title_image} alt={title} width={60} height={60} />
+                    <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 'bold', display: 'flex', alignItems: 'center', fontSize: { xs: '1.5rem', md: '2rem' } }}>
+                        <Box component="span" sx={{ display: 'inline-flex', marginLeft: '-10px', position: 'relative', top: '0px', width: { xs: 45, md: 60 }, height: { xs: 45, md: 60 } }}>
+                            <Image src={title_image} alt={title} width={60} height={60} style={{ width: '100%', height: '100%' }} />
                         </Box>
                         {title}
                         {title2 &&
                             <>
-                                <Box component="span" sx={{ display: 'inline-flex', position: 'relative', top: '0px' }}>
-                                    <Image src={title2} alt={title} width={30} height={30} />
+                                <Box component="span" sx={{ display: 'inline-flex', position: 'relative', top: '0px', width: { xs: 22, md: 30 }, height: { xs: 22, md: 30 } }}>
+                                    <Image src={title2} alt={title} width={30} height={30} style={{ width: '100%', height: '100%' }} />
                                 </Box>
                                 {title3 && title3}
                             </>
