@@ -54,7 +54,7 @@ export default function AboutMe() {
 
                     {/* First - Story Section */}
                     <Typography variant="h6" sx={{ color: 'text.secondary', mb: 3, mt: 6 }}>
-                        First - Story ໒꒰ྀི ˶• . •˶ ꒱ྀི১
+                        First - Story ໒꒰ྀི ˶•  ݂ •˶ ꒱ྀི১
                     </Typography>
                     <Grid container spacing={4}>
                         <Grid size={{ xs: 12, md: 6 }}>
