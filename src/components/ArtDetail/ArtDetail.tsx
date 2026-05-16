@@ -113,8 +113,8 @@ export default function ArtDetail({
                 </Box>
 
                 <Box sx={{ flex: '1 1 40%', width: '100%' }}>
-                    <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 'bold', display: 'flex', alignItems: 'center', fontSize: { xs: '1.5rem', md: '2rem' } }}>
-                        <Box component="span" sx={{ display: 'inline-flex', marginLeft: '-10px', position: 'relative', top: '0px', width: { xs: 45, md: 60 }, height: { xs: 45, md: 60 } }}>
+                    <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 'bold', display: 'flex', alignItems: 'center', fontSize: { xs: '1rem', md: '2rem' } }}>
+                        <Box component="span" sx={{ display: 'inline-flex', marginLeft: '-10px', position: 'relative', top: '0px', width: { xs: 40, md: 60 }, height: { xs: 40, md: 60 } }}>
                             <Image src={title_image} alt={title} width={60} height={60} style={{ width: '100%', height: '100%' }} />
                         </Box>
                         {title}
