@@ -49,7 +49,7 @@ export const artworks = [
     description_en_one: 'As someone who really loved chocolate, Pepero was one of my favorite snacks. The sweet memory expressed by changing the chocolate part of that Pepero into an Arizona flavor. Among regular Pepero, nude Pepero, and almond Pepero, I paid homage to the almond Pepero shape and added small images.'
   },
   {
-    id: 10, title: 'AZ sweet Treats', category: 'Acrylic on Canvas', size: '100F 162.2 X 130.3 cm (64 x 51 inch)', image: '/assets/010_healing muffin_2009_acrylic on canvas_162.2x130.3(cm).JPG', title_image: '/art_works_title_character/Icon10.png',
+    id: 10, title: 'AZ Sweet Treats', category: 'Acrylic on Canvas', size: '100F 162.2 X 130.3 cm (64 x 51 inch)', image: '/assets/010_healing muffin_2009_acrylic on canvas_162.2x130.3(cm).JPG', title_image: '/art_works_title_character/Icon10.png',
     description_kr_one: '첫 미국이었던 아리조나. 마트가서 미국과자를 구경하는게 재밌었고 여기저기 꼭 빠지지 않는 머핀들이 인상적이었다. 미국아리조나머핀, 순간순간의 달콤한 추억들을 담은 아리조나머핀들.',
     description_en_one: 'Arizona, which was my first time in America. It was fun going to the mart and looking at American snacks, and the muffins that were always present everywhere left an impression. American Arizona muffins, Arizona muffins containing the sweet memories of every moment.'
   },
