@@ -59,18 +59,24 @@ export default function AboutMe() {
                     <Grid container spacing={4}>
                         <Grid size={{ xs: 12, md: 6 }}>
                             <KrEnTypography variant="body1" sx={{ mb: 3 }}>
-                                회복과 치유는 계속적으로 내가 해 온 - 이어갈 이야기이다. 예술은 많은 이들에게 다양한 의미를 갖는다. 나에게 있어서 예술은 감정을 움직여주며 누군가를 포용하는 것이면 좋겠다. 내면의 아이와 과거의 경험을 통한 현재의 느낌을 그려내 새로운 공간이 된다. 어쩌면 작업의 동기를 가지고 작업을 진행해 나간다는 것 자체가 의미 있는 예술 활동이다. 주사기라는 설치 작업을 했었을 땐, 이전에 나를 아프게 했던 주사기였지만 이제는 작품을 만들기 위한 하나의 오브제로 변경시키고 그것이 새로운 의미를 갖게 한다고 했었다. 작업으로 가져온 이유는 조금 다를지라도 마치 요셉 코수스가 자신의 기억에 있는 펠트를 가지고 설치 작업을 했던 것처럼 그 물질을 작업으로 가져옴으로써 회복의 의미를 부여하려 했던 것이다.
+                                회복과 치유는 계속적으로 내가 해 온 - 이어갈 이야기이다. 예술은 많은 이들에게 다양한 의미를 갖는다. 나에게 있어서 예술은 감정을 움직여주며 누군가를 포용하는 것이면 좋겠다. 내면의 아이와 과거의 경험을 통한 현재의 느낌을 그려내 새로운 공간이 된다. 이 느낌을 효과적으로 전달 할 수 있을 것 같았던 데페이즈망 기법을 사용해 엉뚱한 배치를 통한 유쾌한 어울림, 이것이 공간구성 방법이었다.
+                            </KrEnTypography>
+                            <KrEnTypography variant="body1" sx={{ mb: 3 }}>
+                                어쩌면 작업의 동기를 가지고 작업을 진행해 나간다는 것 자체가 의미 있는 예술 활동이다. 주사기라는 설치 작업을 했었을 땐, 이전에 나를 아프게 했던 주사기였지만 이제는 작품을 만들기 위한 하나의 오브제로 변경시키고 그것이 새로운 의미를 갖게 한다고 했었다. 작업으로 가져온 이유는 조금 다를지라도 마치 요셉 코수스가 자신의 기억에 있는 펠트를 가지고 설치 작업을 했던 것처럼 그 물질을 작업으로 가져옴으로써 회복의 의미를 부여하려 했던 것이다.
                             </KrEnTypography>
                             <KrEnTypography variant="body1">
-                                병원을 그리는 것도 그랬다. 병원의 공간을 꾸미면서 그려내는 과정이 아픔으로부터의 자유와 그것을 극복했다는 회복과 그로 인한 치유였다. 공간을 구성하여 면을 분할하고 그 안에 밝고 다양한 색채들을 채워 넣는 과정 - 마치 조각 색종이를 맞추는 것처럼 나의 기억 하나하나를 새롭게 밝은 의미로 채워 넣는 표현이기도 했다.
+                                병원을 그리는 것도 그랬다. 병원의 공간을 꾸미면서 그려내는 과정이 아픔으로부터의 자유를 향하는 것이었고, 그것을 극복했다는 선언같은 회복과 이로인한 치유(recovery)였다. 공간을 구성하여 면을 분할하고 그 안에 밝고 다양한 색채들을 채워 넣는 과정 - 마치 조각 색종이를 맞추는 것처럼 나의 기억 하나하나를 새롭게 밝은 의미로 채워 넣는 표현이기도 했다.
                             </KrEnTypography>
                         </Grid>
                         <Grid size={{ xs: 12, md: 6 }}>
                             <KrEnTypography variant="body1" sx={{ mb: 3 }}>
-                                Recovery and healing are the stories I have continuously told—and will continue to tell. Art holds various meanings for many people. To me, I hope art moves emotions and embraces someone. It depicts the inner child and current feelings through past experiences, creating a new space. Perhaps the act of proceeding with work motivated by a purpose is a meaningful artistic activity in itself. When I created an installation art using syringes, I explained that although they were objects that had once caused me pain, I was transforming them into objects for creating art, giving them a new meaning. Although the reason for using them might be slightly different, just as Joseph Kosuth used felt from his memories for installation work, I attempted to imbue the meaning of recovery by bringing that material into my work.
+                                Recovery and healing are the stories I have continuously told—and will continue to tell. Art holds various meanings for many people. To me, I hope art moves emotions and embraces someone. It depicts the inner child and current feelings through past experiences, creating a new space. Believing it could effectively convey this feeling, I used the dépaysement technique; a delightful harmony through unexpected placement, this was my method of spatial composition.
+                            </KrEnTypography>
+                            <KrEnTypography variant="body1" sx={{ mb: 3 }}>
+                                Perhaps the act of proceeding with work motivated by a purpose is a meaningful artistic activity in itself. When I created an installation art using syringes, I explained that although they were objects that had once caused me pain, I was transforming them into objects for creating art, giving them a new meaning. Although the reason for using them might be slightly different, just as Joseph Kosuth used felt from his memories for installation work, I attempted to imbue the meaning of recovery by bringing that material into my work.
                             </KrEnTypography>
                             <KrEnTypography variant="body1">
-                                Painting hospitals was similar. The process of decorating and depicting the hospital space was freedom from pain, a recovery that overcame it, and the resulting healing. The process of constructing the space, dividing the planes, and filling them with bright and diverse colors—like fitting together pieces of colored paper—was also an expression of filling each of my memories with new, bright meanings.
+                                Painting hospitals was similar. The process of decorating and depicting the hospital space was a journey toward freedom from pain, a declaration of recovery for having overcome it, and the resulting healing. The process of constructing the space, dividing the planes, and filling them with bright and diverse colors—like fitting together pieces of colored paper—was also an expression of filling each of my memories with new, bright meanings.
                             </KrEnTypography>
                         </Grid>
                     </Grid>
@@ -82,7 +88,7 @@ export default function AboutMe() {
                     <Grid container spacing={4}>
                         <Grid size={{ xs: 12, md: 6 }}>
                             <KrEnTypography variant="body1">
-                                그 다음에는 치유와 회복의 이미지들을 담기 시작했다. 아이스크림 - 우는 아이들에게 아이스크림 같은 달콤한 간식을 건넸을 때 기분이 나아지고 울음을 그치는 그런 달콤하고 다정한 것들. 그래서 도넛 박스에, 커피 투고 캐리어에, 휘핑크림 위에 담고 놓아 순간의 쉼이 될 수 있길, 저기압된 기분이 한층 밝아질 수 있길 바랐다. 손에서 손으로 전달할 수 있는 것들을 그려 - 마음을 전하고, 위로를 건네려 하는 손길 같은. ♥
+                                그 다음에는 치유와 회복의 이미지들을 담기 시작했다. 아이스크림 - 우는 아이들에게 아이스크림 같은 달콤한 간식을 건넸을 때 기분이 나아지고 울음을 그치는 그런 달콤하고 다정한 것들. 그래서 도넛 박스에, 커피 투고 캐리어에, 휘핑크림 위에 담고 놓아 순간의 쉼(rest)이 될 수 있길, 저기압된 기분이 한층 밝아질 수 있길 바랐다. 손에서 손으로 전달할 수 있는 것들을 그려 - 마음을 전하고, 위로를 건네려 하는 손길 같은. ♥
                             </KrEnTypography>
                         </Grid>
                         <Grid size={{ xs: 12, md: 6 }}>
