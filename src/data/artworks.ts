@@ -2,7 +2,7 @@ export const artworks = [
   {
     id: 1, title: 'First Story', category: 'Acrylic on Canvas', size: '116.8 X 91.0 cm (46 x 36 inch)', image: '/assets/01_story_2009_acrylic on canvas_116.8x91.0(cm).JPG', title_image: '/art_works_title_character/Icon1.png',
     description_kr_one: '소아외과 선생님을 만나야 할 것 같다는 소견으로 4번째 개복수술을 오더받던 그날은 정말 온종일 멍했다. 어렸을 때의 일인 줄만 알았던 병원 생활, 힘든 마음으로 결국 다시 가게 됐다. 그런데 병동을 들어서는 순간 너무나 희한하게도 마치 어릴 적 놀던 동네 놀이터에 온 것 같은 느낌을 받았다. 오랜만이라고 대학생이 된 나를 놀라며 반가워해주는, 나를 기억해주는 간호사 선생님들. 낯설지 않은 익숙함과 추억 같은 게 떠오르는 느낌, 왠지 이상하지만 새로운 느낌이었다.',
-    description_kr_two: '서울대학교병원에는 1인실, 2인실, 6-7인실이 있었는데 잠귀가 예민했던 중학생 때는 아기들 울음소리에 잠들기가 힘들어 2인실을 썼다. 하지만, 얼마 안 돼 아픈 데다 적막하기까지 한 2인실보다는 북적북적한 다인실을 더 좋아하게 됐다. 병실 침대 하나하나, 한 명 한 명 담긴 이야기, 한 아이와 그 가족, 그들의 시간들 - 부모님들이 서로의 이야기를 하고 들어주는 대화, 서로를 위로하고 다독이는 시간이 되는 어린이병원 이야기.',
+    description_kr_two: '서울대학교병원에는 1인실, 2인실, 6-7인실이 있었는데 잠귀가 예민했던 중학생 때는 아기들 울음소리에 잠들기가 힘들어 2인실을 썼다. 하지만, 얼마 안 돼 아픈 데다 적막하기까지 한 2인실보다는 북적북적한 다인실을 더 좋아하게 됐다. 병실 침대 하나하나, 한 명 한 명 담긴 이야기, 한 아이와 그 가족, 그들의 시간들 - 부모님들이 마주 앉아 이야기를 하고 들어주는 대화, 서로를 위로하고 다독이는 시간이 되는 어린이병원 이야기.',
     description_en_one: 'The day I received the order for my fourth laparotomy with a referral to see a pediatric surgeon, I was completely numb all day long. Hospital life, which I thought was only a thing of my childhood... with a heavy heart, I eventually had to go back. However, the moment I stepped into the ward, strangely enough, I felt as if I had come to the neighborhood playground where I used to play as a child. The nurses who remembered me warmly welcomed me, surprised to see me as a college student after such a long time. It brought back a sense of familiar warmth and memories—a feeling that was somewhat strange, yet entirely new.',
     description_en_two: 'At Seoul National University Hospital, there were single rooms, double rooms, and 6-7 bed rooms. As a light sleeper during middle school, I found it hard to fall asleep to the sound of babies crying, so I used a double room. However, it wasn\'t long before I grew to prefer the bustling multi-bed rooms over the double rooms, which felt so desolate and quiet when I was already sick. The stories held in each hospital bed, each person, a child and their family, their time together—the children\'s hospital story where parents talk and listen to each other\'s stories, a time to comfort and soothe one another.'
   },
@@ -23,7 +23,7 @@ export const artworks = [
   },
   {
     id: 5, title: 'Spring Land', category: 'Acrylic on Canvas', size: '162.2 X 130.3 cm (64 x 51 inch)', image: '/assets/05_Room_2009_acrylic on canvas_162.2x130.3(cm).JPG', title_image: '/art_works_title_character/Icon5.png',
-    description_kr_one: '병원 침대에 누워서 여러 가지 상상을, 그 자리에서 수없는 기도를 한다. 그 시간이 누군가에게는 안타깝게 느껴지기도, 잊히기도 하는 시간이기도 하지만, 학교에 갈 수 없던 그곳에서는 또 다른 수업을 배운다. 주어진 삶에 대한 깨달음, 삶의 우선순위에 대한 정립, 꿈을 향해 간절해지는 연료, 살아 있는 것에 대한 감사, 곁을 지켜주는 이들에 대한 깊은 사랑, 따뜻한 위로가 마음에 닿는 느낌 그리고 주는 힘, 이 시간들을 지나갈 수 있게 하는 힘, 또다시 일어설 수 있게 하는 힘에 대해, - 생명에 대해, 쉼에 대해.',
+    description_kr_one: '병원 침대에 누워서 여러 가지 상상을, 그 자리에서 수없는 기도를 한다. 그 시간이 누군가에게는 안타깝게 느껴지기도, 잊혀지기도 하는 시간이기도 하지만, 학교에 갈 수 없던 그곳에서는 또 다른 수업을 배운다. 주어진 삶에 대한 깨달음, 삶의 우선순위에 대한 정립, 꿈을 향해 간절해지는 연료, 살아 있는 것에 대한 감사, 곁을 지켜주는 이들에 대한 깊은 사랑, 따뜻한 위로가 마음에 닿는 느낌 그리고 주는 힘, 이 시간들을 지나갈 수 있게 하는 힘, 또다시 일어설 수 있게 하는 힘에 대해, - 생명에 대해, 쉼에 대해.',
     description_en_one: 'Lying on the hospital bed, I imagine many things and say countless prayers. Although that time might feel unfortunate or be forgotten by some, in that place where I couldn\'t go to school, I learned another lesson. Realizations about a given life, establishing life\'s priorities, the fuel to yearn for dreams, gratitude for being alive, deep love for those who stay by my side, the strength that warm comfort gives to the heart, the strength to pass through these times, and the power to stand up again—about life, about rest.'
   },
   {
@@ -55,12 +55,12 @@ export const artworks = [
   },
   {
     id: 11, title: 'Healing Corns', category: 'Acrylic on Canvas', size: '162.2 X 130.3 cm (64 x 51 inch)', image: '/assets/011_healing corn_2009_acrylic on canvas_162.2x130.3(cm).JPG', title_image: '/art_works_title_character/Icon11.png',
-    description_kr_one: '모든게 신기하고 모든게 즐거웠던 여름, 그 해 여름엔 그곳에서 많이 회복했고 쉼을 얻었고 다시 그림을 그려낼 힘을 얻었다. 뜨겁게 기도하며 뜨겁게 즐거웠던 그 해 여름, 그날의 우리들.',
+    description_kr_one: '모든게 신기하고 모든게 즐거웠던 여름, 그 해 여름엔 그곳에서 많이 회복했고 쉼을 누렸고 다시 그림을 그려낼 힘을 얻었다. 뜨겁게 기도하며 뜨겁게 즐거웠던 그 해 여름, 그날의 우리들.',
     description_en_one: 'The summer when everything was fascinating and joyful. That summer, I recovered a lot there, found rest, and gained the strength to draw again. The summer when we prayed fervently and enjoyed ourselves passionately, us from those days.'
   },
   {
     id: 13, title: 'Heal-to-go', category: 'Acrylic on Canvas', size: '162.2 X 130.3 cm (64 x 51 inch)', image: '/assets/012_To go box_2009_acrylic on canvas_162.2x130.3(cm).JPG', title_image: '/art_works_title_character/Icon12.png',
-    description_kr_one: '삶의 슬픔과 아픔에서 마주한 기쁨과 회복의 이야기를 전해주고 싶었다. 한잔에 위로를, 두잔의 함께함으로 우리의 어려웠던 모든 순간도 아름답게 기억 될 꺼라는 희망을.',
-    description_en_one: 'I wanted to convey the story of joy and recovery encountered amidst the sorrow and pain of life. Comfort in one cup, the hope that through the togetherness of two cups, all our difficult moments will also be remembered beautifully.'
+    description_kr_one: '삶의 슬픔과 아픔에서 마주한 기쁨과 회복의 이야기를 전해주고 싶었다. 한잔에 위로를, 두잔의 함께함으로 - 우리의 어려웠던 모든 순간도 아름답게 기억 될 꺼라는 희망을.',
+    description_en_one: 'I wanted to convey the story of joy and recovery encountered amidst the sorrow and pain of life. Comfort in one cup, the hope that through the togetherness of two cups - all our difficult moments will also be remembered beautifully.'
   },
 ];
